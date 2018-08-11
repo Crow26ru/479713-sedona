@@ -6,13 +6,10 @@
   </head>
   <body>
     <header class="main-header">
-      <!--Скорее всего тег <nav> примет относительное позиционирование-->
-      <!--А дочерним элементам будет задано абсолютное позиционирование-->
       <nav class="main-navigator">
        
         <a class="main-header-logo" href="index.html">
-          <!--Логотип-ссылка, ведущий на главную страницу-->
-            <img src="http://placehold-logo.it/100x50" width="100" height="50" alt="Логотип Sedona">
+          <img src="http://placehold-logo.it/100x50" width="100" height="50" alt="Логотип Sedona">
         </a>
         
         <ul class="site-navigation">
@@ -44,15 +41,26 @@
          
           <h3 class="visibility-hidden">Сортировка по стоимости жилья</h3>
           
+          <p>
+            <b>Найдено: 3</b>
+            Сортировка:
+          </p>
+          
+          <ul class="sort-links">
+            <li><a>По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          
           <span>
-            <a class="btn-filter btn-filter-to-min btn-disabled">
-              <img scr="http://placehold-btn-down.it/16x16" alt="Сортировать по убыванию">
+            <a class="btn-filter btn-filter-to-min btn-filter-disabled">
+              <img src="http://placehold-btn-down.it/16x16" alt="Сортировать по убыванию">
             </a>
           </span>
           
           <span>
             <a class="btn-filter btn-filter-to-max" href="#">
-              <img scr="http://placehold-btn-down.it/16x16" alt="Сортировать по возрастанию">
+              <img src="http://placehold-btn-up.it/16x16" alt="Сортировать по возрастанию">
             </a>
           </span>
           
@@ -60,16 +68,21 @@
         
         <ul class="search-result-list">
           <li>
-          
-            <h3>Amara Resort &amp; Spa</h3>
            
             <a class="preview-photo" href="#">
               <img src="http://placehold-preview-photo1.it/60x40" width="60" height="40" alt="Превью гостиницы Amara Resort &amp; Spa">
             </a>
-          
+            
+            <div class="search-result-item-info">
+             
+              <h3>Amara Resort &amp; Spa</h3>
+            
             <p>
               <span class="type">Гостиница</span>
               <span class="cost">От 4000 &#8381;</span>
+            </p>
+             
+            <p> 
               <span>
                 <a class="btn-detail" href="#">Подробнее</a>
               </span>
@@ -78,24 +91,35 @@
               </span>
             </p>
             
-            <p class="rating">
-              <!--Звёзность отеля будет перерисована декоративными элементами на JS?-->
-              <span class="rating-stars">Число звезд: 4</span>
+            </div>
+            
+            <div class="search-result-item-rating">
+             
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
               <span class="rating-mark">Рейтинг: 8,5</span>
-            </p>
+              
+            </div>
             
           </li>
           <li>
-          
-            <h3>Desert Quail Inn</h3>
            
             <a class="preview-photo" href="#">
               <img src="http://placehold-preview-photo2.it/60x40" width="60" height="40" alt="Превью мотеля Desert Quail Inn">
             </a>
             
+            <div class="search-result-item-info">
+             
+              <h3>Desert Quail Inn</h3>
+            
             <p>
               <span class="type">Мотель</span>
               <span class="cost">От 3000 &#8381;</span>
+            </p>
+             
+            <p> 
               <span>
                 <a class="btn-detail" href="#">Подробнее</a>
               </span>
@@ -104,23 +128,34 @@
               </span>
             </p>
             
-            <p class="rating">
-              <span class="rating-stars">Число звезд: 3</span>
+            </div>
+            
+            <div class="search-result-item-rating">
+             
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
               <span class="rating-mark">Рейтинг: 8,9</span>
-            </p>
+              
+            </div>
             
           </li>
           <li>
           
-            <h3>Villas at Poco Diablo</h3>
-          
             <a class="preview-photo" href="#">
               <img src="http://placehold-preview-photo3.it/60x40" width="60" height="40" alt="Превью апартаментов Villas at Poco Diablo">
-            </a>
+            </a>            
+            
+            <div class="search-result-item-info">
+             
+              <h3>Villas at Poco Diablo</h3>
             
             <p>
               <span class="type">Апартаменты</span>
               <span class="cost">От 2000 &#8381;</span>
+            </p>
+             
+            <p> 
               <span>
                 <a class="btn-detail" href="#">Подробнее</a>
               </span>
@@ -129,10 +164,15 @@
               </span>
             </p>
             
-            <p class="rating">
-              <span class="rating-stars">Число звезд: 2</span>
+            </div>
+            
+            <div class="search-result-item-rating">
+             
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
+              <img src="http://placehold-star.it/16x16" width="16" height="16" alt="&#9733;">
               <span class="rating-mark">Рейтинг: 9,2</span>
-            </p>
+              
+            </div>
             
           </li>
         </ul>
