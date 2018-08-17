@@ -70,15 +70,16 @@
             <p class="search-filter-range-params">
               <label>
                 <span>От</span>
-                <input type="number" name="from" value="0">
+                <input type="number" name="from" min="0" step="100" value="0">
               </label>
               <label>
                 <span>От</span>
-                <input type="number" name="to" value="0">
+                <input type="number" name="to" min="0" step="100" value="0">
               </label>
             </p>
             <p class="search-filter-range-input">
-              <input type="range" name="cost-range" min="0" max="4000" step="100">
+              <span class="left-range"></span>
+              <span class="right-range"></span>
             </p>
           </fieldset>
           <button class="show" type="submit">Показать</button>
