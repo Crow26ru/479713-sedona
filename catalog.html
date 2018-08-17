@@ -22,6 +22,67 @@
       <section class="search-filter">
         <h2 class="visibility-hidden">Фильтр поиска</h2>
         <!--Здесь будет форма для фильтра поиска-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="search-filter-infrastructure">
+            <legend>Инфраструктура:</legend>
+            <p class="search-filter-infrastructure-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <span>Бассейн</span>
+              </label>
+            </p>
+            <p class="search-filter-infrastructure-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="parking">
+                <span>Парковка</span>
+              </label>
+            </p>
+            <p class="search-filter-infrastructure-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="wi-fi">
+                <span>Wi-Fi</span>
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="search-filter-type-of-hotel">
+            <legend>Тип жилья:</legend>
+            <p class="search-filter-type-of-hotel-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="hotel" checked>
+                <span>Гостиница</span>
+              </label>
+            </p>
+            <p class="search-filter-type-of-hotel-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="motel" checked>
+                <span>Мотель</span>
+              </label>
+            </p>
+            <p class="search-filter-type-of-hotel-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="appartments" checked>
+                <span>Апартаменты</span>
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="search-filter-cost">
+            <legend>Стоимость в сутки (Р):</legend>
+            <p class="search-filter-range-params">
+              <label>
+                <span>От</span>
+                <input type="number" name="from" value="0">
+              </label>
+              <label>
+                <span>От</span>
+                <input type="number" name="to" value="0">
+              </label>
+            </p>
+            <p class="search-filter-range-input">
+              <input type="range" name="cost-range" min="0" max="4000" step="100">
+            </p>
+          </fieldset>
+          <button class="show" type="submit">Показать</button>
+        </form>
       </section>
       <section class="search-result">
         <h2 class="visibility-hidden">Результаты поиска</h2>

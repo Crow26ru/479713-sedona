@@ -25,9 +25,9 @@
        <!--В <img> его не оборачиваю.-->
     </header>
     <main class="content">
-      <h1 class="visibility-hidden">Заказ жилья в Седоне</h1>
+      <h1 class="visually-hidden">Заказ жилья в Седоне</h1>
       <section class="advantages">
-        <h2 class="visibility-hidden">Преимущества городка Седоны</h2>
+        <h2 class="visually-hidden">Преимущества городка Седоны</h2>
         <p class="advantages-intro-mark">
           <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
         </p>
@@ -43,7 +43,7 @@
           </div>
           <div class="advantages-item-1-img-container">
             <img src="img/item1.jpg" width="800"
-             height="256" alt="Одно из городских строений">
+             height="256" alt="Одно из городских строений в стилиские дикого запада">
           </div>
         </section>
         <section class="advantages-extra">
@@ -96,12 +96,42 @@
         </a>
       </section>
       <section class="map">
-        <h2 class="visibility-hidden">Как до нас добраться</h2>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <a href="map.html">
          <img src="img/map.jpg" width="1200"
           height="593" alt="Карта со спутника">
         </a>
         <!--Форма поиска жилья-->
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="visually-hidden">Форма для поиска жилья</h3>
+          <p class="container-for-date">
+            <label for="input-date">
+              <b>Дата заезда:</b>
+            </label>
+            <input type="date" id="input-date" name="input-date" value="2017-04-24">
+          </p>
+          <p class="container-for-date">
+            <label for="output-date">
+              <b>Дата выезда:</b>
+            </label>
+            <input type="date" id="output-date" name="output-date" value="2017-07-04">
+          </p>
+          <p class="container-for-peoples-count">
+            <label for="count-adults">
+              <b>Взрослые:</b>
+            </label>
+            <input type="number" id="count-adults" name="count-adults"
+             min="1" step="1" value="2">
+            <label for="count-childrens">
+              <b>Дети:</b>
+            </label>
+            <input type="number" id="count-childrens" name="count-childrens"
+             min="0" step="1" value="0">
+          </p>
+          <p class="container-for-search">
+            <button class="find" type="submit">Найти</button>
+          </p>
+        </form>
       </section>
     </main>
     <!--По поводу подвала-->
@@ -129,7 +159,7 @@
         Website by
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo_htmlacademy.svg"
-           width="115" height="41" alt="Логотип HTML Academy">
+           width="115" height="41" alt="Ссылка на интенсив &quot;HTML и CSS, уровень 1&quot; в HTML Academy">
         </a>
       </p>
     </footer>
