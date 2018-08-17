@@ -106,27 +106,36 @@
           <h3 class="visually-hidden">Форма для поиска жилья</h3>
           <p class="container-for-date">
             <label for="input-date">
-              <b>Дата заезда:</b>
+              Дата заезда:
             </label>
-            <input type="date" id="input-date" name="input-date" value="2017-04-24" placeholder="дд-мм-гггг">
+            <input id="input-date" type="text" name="input-date" value="24 апреля 2017">
           </p>
           <p class="container-for-date">
             <label for="output-date">
-              <b>Дата выезда:</b>
+              Дата выезда:
             </label>
-            <input type="date" id="output-date" name="output-date" value="2017-07-04" placeholder="дд-мм-гггг">
+            <input id="output-date" type="text" name="output-date" value="4 июля 2017">
           </p>
           <p class="container-for-peoples-count">
             <label for="count-adults">
-              <b>Взрослые:</b>
+              Взрослые:
             </label>
-            <input type="number" id="count-adults" name="count-adults"
-             min="1" step="1" value="2">
+            <!--Минусы и плюсы в кнопках можно стилизовать-->
+            <button class="minus-adult" type="button"
+             aria-label="уменьшить число взрослых на одного"></button>
+            <input type="text" id="count-adults" name="count-adults"
+             value="2">
+             <button class="plus-adult" type="button"
+              aria-label="увеличить число взрослых на одного"></button>
             <label for="count-childrens">
-              <b>Дети:</b>
+              Дети:
             </label>
-            <input type="number" id="count-childrens" name="count-childrens"
-             min="0" step="1" value="0">
+            <button class="minus-children" type="button"
+             aria-label="уменьшить число детей на одного"></button>
+            <input type="text" id="count-childrens" name="count-childrens"
+              value="0">
+             <button class="plus-children" type="button"
+             aria-label="увеличить число детей на одного"></button>
           </p>
           <p class="container-for-search">
             <button class="find" type="submit">Найти</button>
