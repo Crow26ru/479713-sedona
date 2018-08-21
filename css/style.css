@@ -1,8 +1,10 @@
+/*Стилизация index.html*/
+
 body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
@@ -22,7 +24,6 @@ a {
     color: #000000;
     
     background-color: #ffffff;
-    
 }
 
 .site-navigation,
@@ -32,17 +33,13 @@ a {
     list-style: none;
 }
 
-.site-navigation a,
-btn,
-sort-links,
-btn-detail,
-btn-order {
-    text-decoration: none;
-    text-transform: uppercase;
+.site-navigation a {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
-.site-navigation a:link,
-.site-navigation a:visited{
+.site-navigation a:link {
     color: #000000;
 }
 
@@ -52,57 +49,255 @@ btn-order {
 }
 
 .site-navigation a:active {
-    color: #cacaca; 
+    color: #cacaca;
 }
 
 .site-navigation .active {
     color: #766357;
 }
 
-btn {
-    display: block;
+.advantages-intro-mark {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
 }
-.btn:link,
-.btn:visited {
+
+.advantages-intro {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    color: #333333;
+}
+
+.advantages-item-1-container,
+.advantages-item-2-container {
+    background-color: #81b3d2;
+}
+
+.advantages-item-1-container h3,
+.advantages-item-2-container h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.advantages-item-1-container p,
+.advantages-item-2-container p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.advantages-extra b {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.advantages-extra p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.advantages-item-3,
+.advantages-item-4,
+.advantages-item-5 {
+    background-color: #eeeeee;
+}
+
+.advantages-item-3 h3,
+.advantages-item-4 h3,
+.advantages-item-5 h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.advantages-item-3 p,
+.advantages-item-4 p,
+.advantages-item-5 p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    text-align: center;
+    color: #333333;
+}
+
+.container-before-search-form b {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.container-before-search-form p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn-open-form {
+    display: block;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.btn-open-form:link {
     color: #ffffff;
     
     background-color: #766357;
 }
 
-.btn:hover {
+.btn-open-form:hover,
+.btn-open-form:focus {
     color: #ffffff;
     
     background-color: #604e43;
 }
 
-.btn:active {
+.btn-open-form:active {
     color: #928a85;
     
     background-color: #503e33;
 }
 
-.sort-links a {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-.sort-links a:link,
-.sort-link a:visited {
-    border-bottom: 1px dotted #81b3d2;
-    
-    color: #cacaca;
-}
-
-.sort-links a:hover {
-    border-bottom: 1px dotted #81b3d2;
-    
-    color: #81b3d2;
-}
-
-.sort-links a:active {
+.form-search label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: #000000;
 }
 
-.sort-links .active {
+.form-search input[type="text"] {
+    border: 2px solid #f2f2f2;
+    
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #f2f2f2;
+}
+
+.form-search input[type="text"]:hover {
+    border: 2px solid #ebebeb;
+    
+    background-color: #ebebeb;
+}
+
+.form-search input[type="text"]:focus {
+    border: 2px solid #e5e5e5;
+    
+    background-color: #ffffff;
+    outline: none;
+}
+
+button[class^="plus"],
+button[class^="minus"] {
+    border: none;
+    
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #a9a9a9;
+    
+    background-color: #f2f2f2;
+}
+
+button[class^="plus"]:hover,
+button[class^="minus"]:hover,
+button[class^="plus"]:focus,
+button[class^="minus"]:focus {
+    color: #000000;
+}
+
+button[class^="plus"]:active,
+button[class^="minus"]:active {
     color: #81b3d2;
 }
+
+.form-search .find {
+    border: none;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.form-search .find:hover,
+.form-search .find:focus {
+    background-color: #669ec0;
+}
+
+.form-search .find:active {
+    color: #94b9d2;
+    
+    background-color: #5496bd;
+}
+
+/*Стилизация подвала*/
+
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hash-tag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.btn-social {
+    background-color: #81b3d2;
+}
+
+.author {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Вот эта часть с логотипом не работает
+Начало*/
+
+.logo-htmlacademy:link img {
+    fill: #231f20;
+}
+
+.logo-htmlacademy:hover img,
+.logo-htmlacademy:focus img {
+    fill: #81b3d2;
+}
+
+.logo-htmlacademy:active img {
+    fill: #bdbbbc;
+}
+
+/*конец*/

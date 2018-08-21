@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
      rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <nav class="main-navigator">
@@ -40,7 +41,7 @@
         <section class="advantages-item-1">
           <div class="advantages-item-1-container">
             <h3>Настоящий городок</h3>
-            <span>- №1 -</span>
+            <p>- №1 -</p>
             <p class="advantages-item-1-description">Седона - не аттракцион
              для туристов, там течет своя жизнь</p>
           </div>
@@ -51,22 +52,22 @@
         </section>
         <section class="advantages-extra">
           <div class="advantages-extra-item-1">
-            <b>Жилье</b>
+            <p><b>Жилье</b></p>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="advantages-extra-item-2">
-            <b>Еда</b>
+            <p><b>Еда</b></p>
             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
           <div class="advantages-extra-item-3">
-            <b>Сувениры</b>
+            <p><b>Сувениры</b></p>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </section>
         <section class="advantages-item-2">
           <div class="advantages-item-2-container">
             <h3>Там есть мост дьявола</h3>
-            <span>- №2 -</span>
+            <p>- №2 -</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
           </div>
           <div class="advantages-item-2-img-container">
@@ -76,22 +77,22 @@
         </section>
         <section class="advantages-item-3">
           <h3>Небольшая площадь</h3>
-          <span>- №3 -</span>
+          <p>- №3 -</p>
           <p>Все достопримечательности находятся очень близко</p>
         </section>
         <section class="advantages-item-4">
           <h3>Красивая дорога</h3>
-          <span>- №4 -</span>
+          <p>- №4 -</p>
           <p>Ехать в седону совсем не скучно!</p>
         </section>
         <section class="advantages-item-5">
           <h3>Мало туристов</h3>
-          <span>- №5 -</span>
+          <p>- №5 -</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </section>
       </section>
       <section class="container-before-search-form">
-        <b>Заинтересовались?</b>
+        <p><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки и мы покажем Вам
         лучшие предложения гостиниц в Седоне</p>
         <a class="btn btn-open-form" href="catalog.html">
@@ -123,22 +124,21 @@
             <label for="count-adults">
               Взрослые:
             </label>
-            <!--Минусы и плюсы в кнопках можно стилизовать-->
             <button class="minus-adult" type="button"
-             aria-label="уменьшить число взрослых на одного"></button>
+             aria-label="уменьшить число взрослых на одного">-</button>
             <input type="text" id="count-adults" name="count-adults"
              value="2">
              <button class="plus-adult" type="button"
-              aria-label="увеличить число взрослых на одного"></button>
+              aria-label="увеличить число взрослых на одного">+</button>
             <label for="count-childrens">
               Дети:
             </label>
             <button class="minus-children" type="button"
-             aria-label="уменьшить число детей на одного"></button>
+             aria-label="уменьшить число детей на одного">-</button>
             <input type="text" id="count-childrens" name="count-childrens"
               value="0">
              <button class="plus-children" type="button"
-             aria-label="увеличить число детей на одного"></button>
+             aria-label="увеличить число детей на одного">+</button>
           </p>
           <p class="container-for-search">
             <button class="find" type="submit">Найти</button>
@@ -146,10 +146,6 @@
         </form>
       </section>
     </main>
-    <!--По поводу подвала-->
-    <!--Есть идея тегу <body> назначить относительное позиционирование и z-index: 1;-->
-    <!--Подвалу назначить абсолютное позиционирование, bottom: 0; z-index: 2;-->
-    <!--И еще для подвала поиграться со значением свойства opacity-->
     <footer class="main-footer">
       <p class="hash-tag">
         #visitsedona
