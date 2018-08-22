@@ -56,6 +56,18 @@ a {
     color: #766357;
 }
 
+/*Стилизация тега <header> на главной странице*/
+
+.main-header{
+    background-image: url("../img/polygon.svg");
+    background-size: 1200px;
+    background-position: left 0 bottom 0;
+    /*
+    по идее фоновое изображеие скрыто за контентным
+    видимо из-за этого фоновое изображение не видно
+    */
+}
+
 /*Стилизация секции "Преймущества" на главной странице*/
 
 .advantages-intro-mark {
