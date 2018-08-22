@@ -313,18 +313,25 @@ button[class^="minus"]:active {
 
 /*Логотип HTML Academy*/
 
-.logo-htmlacademy-svg path,
-.logo-htmlacademy-svg rect {
+.logo-htmlacademy-svg {
+    width: 115px;
+    height: 41px;
+}
+
+.logo-htmlacademy path,
+.logo-htmlacademy rect {
     fill: #231f20;
 }
 
-.logo-htmlacademy-svg:hover path,
-.logo-htmlacademy-svg:hover rect {
+.logo-htmlacademy:hover path,
+.logo-htmlacademy:hover rect,
+.logo-htmlacademy:focus path,
+.logo-htmlacademy:focus rect{
     fill: #81b3d2;
 }
 
-.logo-htmlacademy-svg:active path,
-.logo-htmlacademy-svg:active rect {
+.logo-htmlacademy:active path,
+.logo-htmlacademy:active rect {
     fill: #bdbbbc;
 }
 /*конец*/
@@ -435,6 +442,11 @@ button[class^="minus"]:active {
     border-bottom: none;
     
     color: #000000;
+}
+
+.btn-filter svg[class^="svg"] {
+    width: 11px;
+    height: 10px;
 }
 
 .btn-filter-to-min polyline,
