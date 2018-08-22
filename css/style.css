@@ -301,3 +301,64 @@ button[class^="minus"]:active {
 }
 
 /*конец*/
+
+.search-filter {
+    background-color: #566571;
+    background-image: url("../img/filter-bg-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.search-filter fieldset {
+    border: none;
+}
+
+.search-filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.search-filter label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.search-filter-range-params {
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    
+    background-color: transparent;
+}
+
+.search-filter-range-params input {
+    border: none;
+    
+    color: #ffffff;
+    
+    background-color: transparent;
+}
+
+.search-filter .show {
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: transparent;
+}
+
+.search-filter .show:hover,
+.search-filter .show:focus {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
