@@ -314,16 +314,16 @@ button[class^="minus"]:active {
 /*Вот эта часть с логотипом не работает
 Начало*/
 
-.logo-htmlacademy:link img {
+.logo-htmlacademy:link .logo-htmlacademy-svg {
     fill: #231f20;
 }
 
-.logo-htmlacademy:hover img,
-.logo-htmlacademy:focus img {
+.logo-htmlacademy:hover .logo-htmlacademy-svg,
+.logo-htmlacademy:focus .logo-htmlacademy-svg {
     fill: #81b3d2;
 }
 
-.logo-htmlacademy:active img {
+.logo-htmlacademy:active .logo-htmlacademy-svg {
     fill: #bdbbbc;
 }
 
@@ -435,6 +435,27 @@ button[class^="minus"]:active {
     border-bottom: none;
     
     color: #000000;
+}
+
+.btn-filter-to-min:link polygon,
+.btn-filter-to-max:link polygon {
+    fill: #cacaca;
+}
+
+.btn-filter-to-min:hover polygon,
+.btn-filter-to-max:hover polygon,
+.btn-filter-to-min:focus polygon,
+.btn-filter-to-max:focus polygon, {
+    fill: #231f20;
+}
+
+.btn-filter-to-min:active polygon,
+.btn-filter-to-max:active polygon {
+    fill: #81b3d2;
+}
+
+.btn-active polygon {
+    fill: #81b3d2;
 }
 
 /*Стилизация карточек найденного жилья*/
