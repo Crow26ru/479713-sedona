@@ -58,14 +58,23 @@ a {
 
 /*Стилизация тега <header> на главной странице*/
 
-.main-header{
-    background-image: url("../img/polygon.svg");
-    background-size: 1200px;
-    background-position: left 0 bottom 0;
-    /*
-    по идее фоновое изображеие скрыто за контентным
-    видимо из-за этого фоновое изображение не видно
-    */
+.main-header {
+    position: relative;
+    width: 1200px;
+    height: 510px;
+    
+    background-color: #dfebf2;
+    background-image: url("../img/polygon.svg"),
+        url("../img/header-index-bg.jpg");
+    background-size: 1200px, 1200px;
+    background-position: 0 453px, 0 -56px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.main-header img {
+    position: absolute;
+    top: 76px;
+    left: 370px;
 }
 
 /*Стилизация секции "Преймущества" на главной странице*/
