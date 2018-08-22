@@ -311,22 +311,22 @@ button[class^="minus"]:active {
     color: #000000;
 }
 
-/*Вот эта часть с логотипом не работает
-Начало*/
+/*Логотип HTML Academy*/
 
-.logo-htmlacademy:link .logo-htmlacademy-svg {
+.logo-htmlacademy-svg path,
+.logo-htmlacademy-svg rect {
     fill: #231f20;
 }
 
-.logo-htmlacademy:hover .logo-htmlacademy-svg,
-.logo-htmlacademy:focus .logo-htmlacademy-svg {
+.logo-htmlacademy-svg:hover path,
+.logo-htmlacademy-svg:hover rect {
     fill: #81b3d2;
 }
 
-.logo-htmlacademy:active .logo-htmlacademy-svg {
+.logo-htmlacademy-svg:active path,
+.logo-htmlacademy-svg:active rect {
     fill: #bdbbbc;
 }
-
 /*конец*/
 
 /*Стилизация формы фильтра на странице каталога*/
@@ -437,24 +437,24 @@ button[class^="minus"]:active {
     color: #000000;
 }
 
-.btn-filter-to-min:link polygon,
-.btn-filter-to-max:link polygon {
+.btn-filter-to-min polyline,
+.btn-filter-to-max {
     fill: #cacaca;
 }
 
-.btn-filter-to-min:hover polygon,
+.btn-filter-to-min:hover polyline,
 .btn-filter-to-max:hover polygon,
-.btn-filter-to-min:focus polygon,
-.btn-filter-to-max:focus polygon, {
+.btn-filter-to-min:focus polyline,
+.btn-filter-to-max:focus polygon {
     fill: #231f20;
 }
 
-.btn-filter-to-min:active polygon,
+.btn-filter-to-min:active polyline,
 .btn-filter-to-max:active polygon {
     fill: #81b3d2;
 }
 
-.btn-active polygon {
+.btn-active polyline {
     fill: #81b3d2;
 }
 
