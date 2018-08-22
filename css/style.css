@@ -1,5 +1,3 @@
-/*Стилизация index.html*/
-
 body {
     margin: 0;
     padding: 0;
@@ -39,6 +37,8 @@ a {
     font-weight: bold;
 }
 
+/*Стилизация ссылок в тегах <nav>*/
+
 .site-navigation a:link {
     color: #000000;
 }
@@ -55,6 +55,8 @@ a {
 .site-navigation .active {
     color: #766357;
 }
+
+/*Стилизация секции "Преймущества" на главной странице*/
 
 .advantages-intro-mark {
     font-size: 21px;
@@ -136,6 +138,8 @@ a {
     color: #333333;
 }
 
+/*Стилизация секции с ссылкой "Поиск гостиницы в Седоне"*/
+
 .container-before-search-form b {
     font-size: 30px;
     line-height: 36px;
@@ -178,6 +182,8 @@ a {
     
     background-color: #503e33;
 }
+
+/*Стилизация формы поиска жилья на главной странице*/
 
 .form-search label {
     font-size: 14px;
@@ -302,6 +308,8 @@ button[class^="minus"]:active {
 
 /*конец*/
 
+/*Стилизация формы фильтра на странице каталога*/
+
 .search-filter {
     background-color: #566571;
     background-image: url("../img/filter-bg-catalog.jpg");
@@ -361,4 +369,126 @@ button[class^="minus"]:active {
     color: #000000;
     
     background-color: #ffffff;
+}
+
+/*Стилизация ссылок для сортировки на станице каталога*/
+
+.search-result-output-text b {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.search-result-output-text span {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.sort-links a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.sort-links .active {
+    color: #81b3d2;
+}
+
+.sort-links a:link {
+    border-bottom: 1px dotted #81b3d2;
+    
+    color: #cacaca;
+}
+
+.sort-links a:hover,
+.sort-links a:focus {
+    border-bottom: 1px dotted #81b3d2;
+    
+    color: #81b3d2;
+}
+
+.sort-links a:active {
+    border-bottom: none;
+    
+    color: #000000;
+}
+
+/*Стилизация карточек найденного жилья*/
+
+.hotel-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.hotel-title:link {
+    color: #000000;
+}
+
+.hotel-title:hover,
+.hotel-title:focus {
+    color: #81b3d2;
+}
+
+.hotel-title:active {
+    color: #cacaca;
+}
+
+.btn-detail {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.btn-detail:link {
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.btn-detail:hover,
+.btn-detail:focus {
+    color: #ffffff;
+    
+    background-color: #669ec0;
+}
+
+.btn-detail:active {
+    color: #94b9d2;
+    
+    background-color: #5496bd;
+}
+
+.btn-order {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.btn-order:link {
+    color: #ffffff;
+    
+    background-color: #766357;
+}
+
+.btn-order:hover,
+.btn-order:focus {
+    color: #ffffff;
+    
+    background-color: #604e43;
+}
+
+.btn-order:active {
+    color: #928a85;
+    
+    background-color: #503e33;
+}
+
+.rating-mark {
+    color: #666666;
+    
+    background-color: #f2f2f2;
 }
