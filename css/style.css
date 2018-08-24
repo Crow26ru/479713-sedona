@@ -685,6 +685,7 @@ div[class^="advantages-extra"],
 }
 
 .map {
+    /*Форму может спрятать под картой?*/
     position: relative;
 }
 
