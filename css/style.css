@@ -33,6 +33,8 @@ a {
 .sort-links,
 .search-result-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation a {
@@ -346,7 +348,8 @@ button[class^="minus"]:active {
     background-color: #566571;
     background-image: url("../img/filter-bg-catalog.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 0 -50px;
 }
 
 .search-filter fieldset {
@@ -607,6 +610,8 @@ body .container {
     display: none;
 }
 
+/*Сетка для раздела Преимущества*/
+
 .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -636,7 +641,7 @@ p[class^="advantages-intro"] {
 }
 
 .advantages-item-1-img-container img {
-    vertical-align: bottom;
+    display: block;
 }
 
 .advantages-extra {
@@ -666,7 +671,7 @@ div[class^="advantages-extra"],
 }
 
 .advantages-item-2-img-container img {
-    vertical-align: bottom;
+    display: block;
 }
 
 .container-before-search-form a {
@@ -684,8 +689,9 @@ div[class^="advantages-extra"],
     display: none;
 }
 
-.map {
+.map img{
     position: relative;
+    display: block;
 }
 
 .form-search {
@@ -744,6 +750,8 @@ button[class^="plus"] {
     text-transform: uppercase;
 }
 
+/*Сетка для подвала*/
+
 .main-footer {
     display: flex;
     flex-shrink: 0;
@@ -777,4 +785,125 @@ button[class^="plus"] {
 
 .author svg {
     margin-right: auto;
+}
+
+/*  -----  Сетка страницы каталога  -----  */
+
+.container h2 {
+    display: none;
+}
+
+.search-filter {
+    min-height: 217px;
+}
+
+.search-filter form {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.search-result-filter {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 73px;
+}
+
+.search-result-output-text {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.search-result-output-text b {
+    margin-right: 49px;
+}
+.sort-links {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 497px;
+}
+
+.sort-links li {
+    margin-right: 33px;
+}
+
+.sort-links li:last-of-type {
+    margin-right: 0;
+}
+
+.btn-filter-to-max {
+    margin-right: 12px;
+}
+
+.search-result-list li {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: -1px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result-list li:first-of-type {
+    flex-basis: 135px;
+    margin-top: 0;
+}
+
+.preview-photo,
+.preview-photo img {
+    display: block;
+}
+
+.preview-photo {
+    margin: 30px 30px 30px 73px;
+    flex-basis: 135px;
+}
+
+.search-result-item-info {
+    flex-basis: 651px;
+    padding: 30px 0;
+}
+
+.search-result-item-info h3,
+.search-result-item-info p {
+    margin: 0;
+}
+
+.search-result-item-info a {
+    vertical-align: top;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin-right: 6px;
+    width: 110px;
+    min-height: 27px;
+    
+    text-align: center;
+}
+
+.btn-order {
+    display: inline-block;
+    margin-left: -4px;
+    width: 142px;
+    min-height: 27px;
+    
+    text-align: center;
+}
+
+
+.search-result-item-rating {
+    flex-basis: 241px;
+    margin-right: auto;
+    padding: 30px 0;
+}
+
+.star-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating-mark {
+    margin-left: 130px;
+    margin-top: 47px;
+    width: 110px;
+    text-align: center;
 }
