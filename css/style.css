@@ -1,3 +1,7 @@
+/*  -----  Служебные стили  -----  */
+
+/*  -----  Конец служебных стилей  -----  */
+
 body {
     margin: 0;
     padding: 0;
@@ -61,7 +65,7 @@ a {
 .main-header {
     position: relative;
     width: 1200px;
-    height: 510px;
+    min-height: 510px;
     
     background-color: #dfebf2;
     background-image: url("../img/polygon.svg"),
@@ -545,4 +549,232 @@ button[class^="minus"]:active {
     color: #666666;
     
     background-color: #f2f2f2;
+}
+
+/*  -----  Оформление крупных сеточных элементов  -----  */
+
+body .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+}
+
+.main-navigator {
+    position: relative;
+    margin: 0;
+    padding: 0 73px;
+    
+    /*для визуального отображения*/
+    min-height: 56px;
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 530px;
+    z-index: 10;
+}
+
+.site-navigation {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    width: 128px;
+    /*для визуального отображения*/
+    min-height: 56px;
+}
+
+.site-navigation li:first-of-type {
+    margin-right: 112px;
+}
+
+.site-navigation li:nth-of-type(2) {
+    margin-right: 330px;
+}
+
+.site-navigation li:last-of-type {
+    margin-left: auto;
+}
+
+/*Временно скрываю visually-hidden*/
+
+.content h1,
+.advantages h2:first-of-type{
+    display: none;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+}
+
+p[class^="advantages-intro"] {
+    flex-basis: 100%;
+}
+
+.advantages-item-1,
+.advantages-item-2 {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.advantages-item-1-container {
+    flex-basis: 400px;
+}
+
+.advantages-item-1-img-container {
+    flex-basis: 800px;
+}
+
+.advantages-item-1-img-container img {
+    vertical-align: bottom;
+}
+
+.advantages-extra {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+div[class^="advantages-extra"],
+.advantages-item-3,
+.advantages-item-4,
+.advantages-item-5 {
+    flex-basis: 400px;
+}
+
+.advantages-item-2 {
+    flex-direction: row-reverse;
+}
+
+.advantages-item-2-container {
+    flex-basis: 400px;
+}
+
+.advantages-item-2-img-container {
+    flex-basis: 800px;
+}
+
+.advantages-item-2-img-container img {
+    vertical-align: bottom;
+}
+
+.container-before-search-form a {
+    /*display: block был прописан выше*/
+    margin: 0 auto;
+    width: 568px;
+    min-height: 86px;
+    
+}
+
+/*Временно скрываю visually-hidden*/
+
+.map .visually-hidden,
+.form-search .visually-hidden{
+    display: none;
+}
+
+.map {
+    position: relative;
+}
+
+.form-search {
+    margin: 0 auto;
+    padding: 55px;
+    width: 458px;
+}
+
+.container-for-date input {
+    box-sizing: border-box;
+    width: 346px;
+    height: 38px;
+    padding: 6px 7px 6px 10px
+}
+
+.input-date {
+    margin-left: 19px;
+}
+
+.output-date {
+    margin-left: 16px;
+}
+button[class^="plus"],
+button[class^="minus"],
+.container-for-peoples-count input{
+    box-sizing: border-box;
+    height: 38px;
+    width: 38px;
+}
+
+.minus-adult {
+    margin-left: 36px;
+}
+
+.container-for-peoples-count input,
+button[class^="plus"] {
+    margin-left: -4px;
+}
+
+.container-for-peoples-count input {
+    text-align: center;
+}
+
+.plus-adult {
+    margin-right: 51px;
+}
+
+.container-for-peoples-count label:last-of-type {
+    margin-right: 23px;
+}
+
+.container-for-search .find {
+    width: 458px;
+    min-height: 58px;
+    
+    text-transform: uppercase;
+}
+
+.main-footer {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.main-footer div,
+.main-footer p {
+    flex-basis: 400px;
+}
+
+.hash-tag,
+.footer-social,
+.author {
+    align-items: center;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author span {
+    margin-left: 100px;
+    margin-right: 8px;
+    margin-top: -12px;
+}
+
+.author svg {
+    margin-right: auto;
 }

@@ -9,231 +9,230 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="main-navigator">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="140"
-         height="72" alt="Логотип Sedona">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="media.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-    <header class="main-header">
-      <img src="img/welcome-header.svg" width="459"
-       height="353"
-       alt="Приветственный слоган">
-       <!--Белое изображение-маска - декоративный элемент.-->
-       <!--В <img> его не оборачиваю.-->
-    </header>
-    <main class="content">
-      <h1 class="visually-hidden">Заказ жилья в Седоне</h1>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества городка Седоны</h2>
-        <p class="advantages-intro-mark">
-          <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-        </p>
-        <p class="advantages-intro">
-          Рассмотрим 5 причин, по которыс Седона круче, чем Гранд Каньон!
-        </p>
-        <section class="advantages-item-1">
-          <div class="advantages-item-1-container">
-            <h3>Настоящий городок</h3>
-            <p>- №1 -</p>
-            <p class="advantages-item-1-description">Седона - не аттракцион
-             для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="advantages-item-1-img-container">
-            <img src="img/item1.jpg" width="800"
-             height="256" alt="Одно из городских строений в стилиские дикого запада">
-          </div>
-        </section>
-        <section class="advantages-extra">
-          <div class="advantages-extra-item-1">
-            <p><b>Жилье</b></p>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="advantages-extra-item-2">
-            <p><b>Еда</b></p>
-            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-          </div>
-          <div class="advantages-extra-item-3">
-            <p><b>Сувениры</b></p>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
-        </section>
-        <section class="advantages-item-2">
-          <div class="advantages-item-2-container">
-            <h3>Там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-          </div>
-          <div class="advantages-item-2-img-container">
-            <img src="img/item2.jpg"
-             width="800" height="256" alt="Мост дьявола">
-          </div>
-        </section>
-        <section class="advantages-item-3">
-          <h3>Небольшая площадь</h3>
-          <p>- №3 -</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </section>
-        <section class="advantages-item-4">
-          <h3>Красивая дорога</h3>
-          <p>- №4 -</p>
-          <p>Ехать в седону совсем не скучно!</p>
-        </section>
-        <section class="advantages-item-5">
-          <h3>Мало туристов</h3>
-          <p>- №5 -</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </section>
-      </section>
-      <section class="container-before-search-form">
-        <p><b>Заинтересовались?</b></p>
-        <p>Укажите предполагаемые даты поездки и мы покажем Вам
-        лучшие предложения гостиниц в Седоне</p>
-        <a class="btn btn-open-form" href="catalog.html">
-          Поиск гостиницы в Седоне
+    <div class="container">   
+      <nav class="main-navigator">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="140"
+           height="72" alt="Логотип Sedona">
         </a>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <a href="map.html">
-         <img src="img/map.jpg" width="1200"
-          height="593" alt="Карта со спутника">
-        </a>
-        <!--Форма поиска жилья-->
-        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="visually-hidden">Форма для поиска жилья</h3>
-          <p class="container-for-date">
-            <label for="input-date">
-              Дата заезда:
-            </label>
-            <input id="input-date" type="text" name="input-date" value="24 апреля 2017">
-          </p>
-          <p class="container-for-date">
-            <label for="output-date">
-              Дата выезда:
-            </label>
-            <input id="output-date" type="text" name="output-date" value="4 июля 2017">
-          </p>
-          <p class="container-for-peoples-count">
-            <label for="count-adults">
-              Взрослые:
-            </label>
-            <button class="minus-adult" type="button"
-             aria-label="уменьшить число взрослых на одного">-</button>
-            <input type="text" id="count-adults" name="count-adults"
-             value="2">
-             <button class="plus-adult" type="button"
-              aria-label="увеличить число взрослых на одного">+</button>
-            <label for="count-childrens">
-              Дети:
-            </label>
-            <button class="minus-children" type="button"
-             aria-label="уменьшить число детей на одного">-</button>
-            <input type="text" id="count-childrens" name="count-childrens"
-              value="0">
-             <button class="plus-children" type="button"
-             aria-label="увеличить число детей на одного">+</button>
-          </p>
-          <p class="container-for-search">
-            <button class="find" type="submit">Найти</button>
-          </p>
-        </form>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <p class="hash-tag">
-        #visitsedona
-      </p>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="btn-social btn-social-tw" href="#">Twitter</a>
-          </li>
-          <li>
-            <a class="btn-social btn-social-fb" href="#">Facebook</a>
-          </li>
-          <li>
-            <a class="btn-social btn-social-yt" href="#">Youtube</a>
-          </li>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-      </div>
-      <p class="author">
-        Website by
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="logo-htmlacademy-svg">
-            <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,
-             1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,
-             0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,
-             2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,
-             10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,
-             401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,
-             2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,
-             395.17,349.23,395.17,350.33Z"
-             transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,
-             0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,
-             2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,
-             4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)"
-             fill="#231f20"/>
-            <path d="M420.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,
-             1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,
-             0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,
-             2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,
-             10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,420.93,
-             351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,
-             2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C415.33,348.89,414.17,349.23,
-             414.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M431.76,340.14V352.9H430v-1.39a4.07,4.07,0,0,1-3.35,1.62,4.62,
-             4.62,0,0,1,0-9.22,4,4,0,0,1,3.15,1.37v-5.14h2ZM427,345.62a2.9,2.9,0,0,
-             0,0,5.8,3,3,0,0,0,2.79-1.84v-2.13A3.06,3.06,0,0,0,427,345.62Z"
-             transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M438.08,343.91c3.48,0,4.68,2.81,4.12,5.34h-6.58c0.22,1.57,1.75,
-             2.22,3.35,2.22a6.41,6.41,0,0,0,2.77-.62v1.68a7.5,7.5,0,0,1-3.14.6c-2.68,
-             0-5-1.53-5-4.61A4.39,4.39,0,0,1,438.08,343.91Zm0.09,1.62a2.39,2.39,0,0,
-             0-2.57,2.26h4.85A2.06,2.06,0,0,0,438.17,345.53Z"
-             transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M444.19,352.9v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,0,1,
-             2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,
-             3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,
-             1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,
-             3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"
-             fill="#231f20"/>
-            <path d="M466.56,344.15h2l-4.1,9.93c-0.95,2.28-2.19,3-3.52,3a5,5,0,0,
-             1-1.15-.15v-1.66a3,3,0,0,0,.89.13c0.95,0,1.66-.67,
-             2.17-2l0.18-.44-4.16-8.82H461l3,6.6Z"
-             transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M395.75,324.82v5a4,4,0,0,1,2.83-1.2,3.41,3.41,0,0,1,3.61,
-             3.57v5.41h-2v-5.16a1.9,1.9,0,0,0-2-2.1,3.08,3.08,0,0,0-2.44,
-             1.46v5.8h-2V324.82h2Z" transform="translate(-355.09 -323.29)"
-             fill="#231f20"/>
-            <path d="M407.52,325.71v3.12h3.17v1.71h-3.17v4c0,1.15.53,1.53,
-             1.66,1.53a4.71,4.71,0,0,0,1.77-.35v1.68a7.14,7.14,0,0,1-2.35.38,
-             2.68,2.68,0,0,1-3-2.88v-4.38H404v-1.71h1.57v-2.64Z"
-             transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            <path d="M413.19,337.58v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,
-             0,1,2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,
-             3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,
-             1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,
-             3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"
-             fill="#231f20"/>
-            <rect x="74.72" y="1.52" width="1.95" height="12.76" fill="#231f20"/>
-            <path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37,
-             362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87,
-             0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11,
-             5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68,
-             1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7,
-             0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82,
-             13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28,
-             1.39v10.51Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
-          </svg>
-        </a>
-      </p>
-    </footer>
+      </nav>
+      <header class="main-header">
+        <img src="img/welcome-header.svg" width="459"
+         height="353" alt="Приветственный слоган">
+      </header>
+      <main class="content">
+        <h1 class="visually-hidden">Заказ жилья в Седоне</h1>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества городка Седоны</h2>
+          <p class="advantages-intro-mark">
+            <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+          </p>
+          <p class="advantages-intro">
+            Рассмотрим 5 причин, по которыс Седона круче, чем Гранд Каньон!
+          </p>
+          <section class="advantages-item-1">
+            <div class="advantages-item-1-container">
+              <h3>Настоящий городок</h3>
+              <p>- №1 -</p>
+              <p class="advantages-item-1-description">Седона - не аттракцион
+               для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="advantages-item-1-img-container">
+              <img src="img/item1.jpg" width="800"
+               height="256" alt="Одно из городских строений в стилиские дикого запада">
+            </div>
+          </section>
+          <section class="advantages-extra">
+            <div class="advantages-extra-item-1">
+              <p><b>Жилье</b></p>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="advantages-extra-item-2">
+              <p><b>Еда</b></p>
+              <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </div>
+            <div class="advantages-extra-item-3">
+              <p><b>Сувениры</b></p>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </section>
+          <section class="advantages-item-2">
+            <div class="advantages-item-2-container">
+              <h3>Там есть мост дьявола</h3>
+              <p>- №2 -</p>
+              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            </div>
+            <div class="advantages-item-2-img-container">
+              <img src="img/item2.jpg"
+               width="800" height="256" alt="Мост дьявола">
+            </div>
+          </section>
+          <section class="advantages-item-3">
+            <h3>Небольшая площадь</h3>
+            <p>- №3 -</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </section>
+          <section class="advantages-item-4">
+            <h3>Красивая дорога</h3>
+            <p>- №4 -</p>
+            <p>Ехать в седону совсем не скучно!</p>
+          </section>
+          <section class="advantages-item-5">
+            <h3>Мало туристов</h3>
+            <p>- №5 -</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </section>
+        </section>
+        <section class="container-before-search-form">
+          <p><b>Заинтересовались?</b></p>
+          <p>Укажите предполагаемые даты поездки и мы покажем Вам
+          лучшие предложения гостиниц в Седоне</p>
+          <a class="btn btn-open-form" href="catalog.html">
+            Поиск гостиницы в Седоне
+          </a>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <a href="map.html">
+           <img src="img/map.jpg" width="1200"
+            height="593" alt="Карта со спутника">
+          </a>
+          <!--Форма поиска жилья-->
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="visually-hidden">Форма для поиска жилья</h3>
+            <p class="container-for-date">
+              <label for="input-date">
+                Дата заезда:
+              </label>
+              <input id="input-date" class="input-date" type="text" name="input-date" value="24 апреля 2017">
+            </p>
+            <p class="container-for-date">
+              <label for="output-date">
+                Дата выезда:
+              </label>
+              <input id="output-date" class="output-date" type="text" name="output-date" value="4 июля 2017">
+            </p>
+            <p class="container-for-peoples-count">
+              <label for="count-adults">
+                Взрослые:
+              </label>
+              <button class="minus-adult" type="button"
+               aria-label="уменьшить число взрослых на одного">-</button>
+              <input type="text" id="count-adults" name="count-adults"
+               value="2">
+               <button class="plus-adult" type="button"
+                aria-label="увеличить число взрослых на одного">+</button>
+              <label for="count-childrens">
+                Дети:
+              </label>
+              <button class="minus-children" type="button"
+               aria-label="уменьшить число детей на одного">-</button>
+              <input type="text" id="count-childrens" name="count-childrens"
+               value="0">
+               <button class="plus-children" type="button"
+               aria-label="увеличить число детей на одного">+</button>
+            </p>
+            <p class="container-for-search">
+              <button class="find" type="submit">Найти</button>
+            </p>
+          </form>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <p class="hash-tag">
+          #visitsedona
+        </p>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a class="btn-social btn-social-tw" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="btn-social btn-social-fb" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="btn-social btn-social-yt" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <p class="author">
+          <span>Website by</span>
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg class="logo-htmlacademy-svg">
+              <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,
+               1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,
+               0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,
+               2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,
+               10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,
+               401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,
+               2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,
+               395.17,349.23,395.17,350.33Z"
+               transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,
+               0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,
+               2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,
+               4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)"
+               fill="#231f20"/>
+              <path d="M420.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,
+               1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,
+               0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,
+               2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,
+               10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,420.93,
+               351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,
+               2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C415.33,348.89,414.17,349.23,
+               414.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M431.76,340.14V352.9H430v-1.39a4.07,4.07,0,0,1-3.35,1.62,4.62,
+               4.62,0,0,1,0-9.22,4,4,0,0,1,3.15,1.37v-5.14h2ZM427,345.62a2.9,2.9,0,0,
+               0,0,5.8,3,3,0,0,0,2.79-1.84v-2.13A3.06,3.06,0,0,0,427,345.62Z"
+               transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M438.08,343.91c3.48,0,4.68,2.81,4.12,5.34h-6.58c0.22,1.57,1.75,
+               2.22,3.35,2.22a6.41,6.41,0,0,0,2.77-.62v1.68a7.5,7.5,0,0,1-3.14.6c-2.68,
+               0-5-1.53-5-4.61A4.39,4.39,0,0,1,438.08,343.91Zm0.09,1.62a2.39,2.39,0,0,
+               0-2.57,2.26h4.85A2.06,2.06,0,0,0,438.17,345.53Z"
+               transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M444.19,352.9v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,0,1,
+               2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,
+               3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,
+               1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,
+               3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"
+               fill="#231f20"/>
+              <path d="M466.56,344.15h2l-4.1,9.93c-0.95,2.28-2.19,3-3.52,3a5,5,0,0,
+               1-1.15-.15v-1.66a3,3,0,0,0,.89.13c0.95,0,1.66-.67,
+               2.17-2l0.18-.44-4.16-8.82H461l3,6.6Z"
+               transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M395.75,324.82v5a4,4,0,0,1,2.83-1.2,3.41,3.41,0,0,1,3.61,
+               3.57v5.41h-2v-5.16a1.9,1.9,0,0,0-2-2.1,3.08,3.08,0,0,0-2.44,
+               1.46v5.8h-2V324.82h2Z" transform="translate(-355.09 -323.29)"
+               fill="#231f20"/>
+              <path d="M407.52,325.71v3.12h3.17v1.71h-3.17v4c0,1.15.53,1.53,
+               1.66,1.53a4.71,4.71,0,0,0,1.77-.35v1.68a7.14,7.14,0,0,1-2.35.38,
+               2.68,2.68,0,0,1-3-2.88v-4.38H404v-1.71h1.57v-2.64Z"
+               transform="translate(-355.09 -323.29)" fill="#231f20"/>
+              <path d="M413.19,337.58v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,
+               0,1,2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,
+               3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,
+               1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,
+               3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"
+               fill="#231f20"/>
+              <rect x="74.72" y="1.52" width="1.95" height="12.76" fill="#231f20"/>
+              <path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37,
+               362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87,
+               0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11,
+               5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68,
+               1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7,
+               0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82,
+               13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28,
+               1.39v10.51Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
+            </svg>
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
