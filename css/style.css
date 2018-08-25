@@ -809,7 +809,7 @@ button[class^="plus"] {
     display: block;
     min-height: 48px;
     
-    text-indent: -1000px;
+    text-indent: -10000px;
 }
 
 .author {
