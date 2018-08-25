@@ -770,6 +770,16 @@ button[class^="plus"] {
 
 .footer-social li {
     display: inline-block;
+    margin-right: 6px;
+    margin-left: -4px;
+    width: 46px;
+}
+
+.footer-social a {
+    display: block;
+    min-height: 48px;
+    
+    text-indent: -1000px;
 }
 
 .author {
@@ -788,10 +798,13 @@ button[class^="plus"] {
 }
 
 /*  -----  Сетка страницы каталога  -----  */
+/*Временно скрываю таким образом*/
 
 .container h2 {
     display: none;
 }
+
+/*Фильтр поиска*/
 
 .search-filter {
     min-height: 217px;
@@ -800,7 +813,90 @@ button[class^="plus"] {
 .search-filter form {
     display: flex;
     flex-shrink: 0;
+    padding: 30px 73px;
+    padding-top: 25px;
+    min-height: 157px;
 }
+
+.search-filter input[type="checkbox"] {
+    display: none;
+}
+
+.search-filter fieldset {
+    /*Обнуление стандартных стилей у элементов flex контейнера*/
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    padding: 0
+}
+
+.search-filter-infrastructure,
+.search-filter-type-of-hotel {
+    flex-basis: 255px;
+}
+
+.container-form-item {
+    flex-basis: 544px;
+    padding-left: 227px;
+}
+
+.search-filter-infrastructure label,
+.search-filter-type-of-hotel label {
+    margin-left: 40px
+}
+
+.search-filter-infrastructure legend,
+.search-filter-type-of-hotel legend {
+    margin-bottom: 25px;
+}
+
+.search-filter-infrastructure p,
+.search-filter-type-of-hotel p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    min-height: 24px;
+}
+
+.search-filter-infrastructure p:last-of-type,
+.search-filter-type-of-hotel p:last-of-type {
+    margin-bottom: 0;
+}
+
+.search-filter-range-params {
+    width: 314px;
+    min-height: 27px;
+    padding-top: 5px;
+}
+
+.search-filter-range-params input {
+    width: 60px;
+}
+
+.search-filter-range-params label:first-of-type {
+    padding-left: 65px;
+}
+
+.search-filter-range-params input:first-of-type {
+    padding-right: 13px;
+}
+
+.search-filter-range-params label:last-of-type {
+    padding-left: 53px;
+}
+
+.container-form-item .show {
+    margin-left: 85px;
+    width: 133px;
+    min-height: 32px;
+    
+    text-transform: uppercase;
+}
+
+/*Раздел результатов поиска*/
 
 .search-result-filter {
     display: flex;
@@ -833,6 +929,8 @@ button[class^="plus"] {
 .btn-filter-to-max {
     margin-right: 12px;
 }
+
+/*Карточки наденного жилья*/
 
 .search-result-list li {
     display: flex;
@@ -867,10 +965,6 @@ button[class^="plus"] {
     margin: 0;
 }
 
-.search-result-item-info a {
-    vertical-align: top;
-}
-
 .btn-detail {
     display: inline-block;
     margin-right: 6px;
@@ -889,6 +983,9 @@ button[class^="plus"] {
     text-align: center;
 }
 
+.btn-order span {
+    vertical-align: bottom;
+}
 
 .search-result-item-rating {
     flex-basis: 241px;
