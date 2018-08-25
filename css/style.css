@@ -372,8 +372,6 @@ button[class^="minus"]:active {
 
 .search-filter-range-params {
     border: 2px solid #ffffff;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
     
     background-color: transparent;
@@ -389,8 +387,6 @@ button[class^="minus"]:active {
 
 .search-filter .show {
     border: 2px solid #ffffff;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
     
     text-align: center;
@@ -579,8 +575,11 @@ body .container {
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin: 0;
     padding: 0;
 }
@@ -613,31 +612,43 @@ body .container {
 /*Сетка для раздела Преимущества*/
 
 .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     padding: 0;
     margin: 0;
 }
 
 p[class^="advantages-intro"] {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
 }
 
 .advantages-item-1,
 .advantages-item-2 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .advantages-item-1-container {
-    flex-basis: 400px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
 }
 
 .advantages-item-1-img-container {
-    flex-basis: 800px;
+    -ms-flex-preferred-size: 800px;
+        flex-basis: 800px;
 }
 
 .advantages-item-1-img-container img {
@@ -645,29 +656,40 @@ p[class^="advantages-intro"] {
 }
 
 .advantages-extra {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 div[class^="advantages-extra"],
 .advantages-item-3,
 .advantages-item-4,
 .advantages-item-5 {
-    flex-basis: 400px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
 }
 
 .advantages-item-2 {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .advantages-item-2-container {
-    flex-basis: 400px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
 }
 
 .advantages-item-2-img-container {
-    flex-basis: 800px;
+    -ms-flex-preferred-size: 800px;
+        flex-basis: 800px;
 }
 
 .advantages-item-2-img-container img {
@@ -701,7 +723,8 @@ div[class^="advantages-extra"],
 }
 
 .container-for-date input {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 346px;
     height: 38px;
     padding: 6px 7px 6px 10px
@@ -717,7 +740,8 @@ div[class^="advantages-extra"],
 button[class^="plus"],
 button[class^="minus"],
 .container-for-peoples-count input{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 38px;
     width: 38px;
 }
@@ -753,19 +777,25 @@ button[class^="plus"] {
 /*Сетка для подвала*/
 
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .main-footer div,
 .main-footer p {
-    flex-basis: 400px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
 }
 
 .hash-tag,
 .footer-social,
 .author {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-social li {
@@ -783,8 +813,12 @@ button[class^="plus"] {
 }
 
 .author {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .author span {
@@ -811,8 +845,11 @@ button[class^="plus"] {
 }
 
 .search-filter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     padding: 30px 73px;
     padding-top: 25px;
     min-height: 157px;
@@ -836,11 +873,13 @@ button[class^="plus"] {
 
 .search-filter-infrastructure,
 .search-filter-type-of-hotel {
-    flex-basis: 255px;
+    -ms-flex-preferred-size: 255px;
+        flex-basis: 255px;
 }
 
 .container-form-item {
-    flex-basis: 544px;
+    -ms-flex-preferred-size: 544px;
+        flex-basis: 544px;
     padding-left: 227px;
 }
 
@@ -899,8 +938,11 @@ button[class^="plus"] {
 /*Раздел результатов поиска*/
 
 .search-result-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     padding: 0 73px;
 }
 
@@ -913,8 +955,11 @@ button[class^="plus"] {
     margin-right: 49px;
 }
 .sort-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-right: 497px;
 }
 
@@ -933,15 +978,19 @@ button[class^="plus"] {
 /*Карточки наденного жилья*/
 
 .search-result-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-top: -1px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .search-result-list li:first-of-type {
-    flex-basis: 135px;
+    -ms-flex-preferred-size: 135px;
+        flex-basis: 135px;
     margin-top: 0;
 }
 
@@ -952,11 +1001,13 @@ button[class^="plus"] {
 
 .preview-photo {
     margin: 30px 30px 30px 73px;
-    flex-basis: 135px;
+    -ms-flex-preferred-size: 135px;
+        flex-basis: 135px;
 }
 
 .search-result-item-info {
-    flex-basis: 651px;
+    -ms-flex-preferred-size: 651px;
+        flex-basis: 651px;
     padding: 30px 0;
 }
 
@@ -988,14 +1039,20 @@ button[class^="plus"] {
 }
 
 .search-result-item-rating {
-    flex-basis: 241px;
+    -ms-flex-preferred-size: 241px;
+        flex-basis: 241px;
     margin-right: auto;
     padding: 30px 0;
 }
 
 .star-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .rating-mark {
