@@ -225,6 +225,9 @@ a {
 /*Стилизация формы поиска жилья на главной странице*/
 
 .form-search label {
+    display: block;
+    box-sizing: border-box;
+    
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -233,6 +236,8 @@ a {
 }
 
 .form-search input[type="text"] {
+    padding-top: 4px;
+    padding-bottom: 4px;
     border: 2px solid #f2f2f2;
     
     font-size: 14px;
@@ -261,7 +266,7 @@ button[class^="plus"],
 button[class^="minus"] {
     border: none;
     
-    font-size: 14px;
+    font-size: 26px;
     line-height: 26px;
     font-weight: bold;
     text-align: center;
@@ -289,6 +294,7 @@ button[class^="minus"]:active {
     line-height: 26px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
     
     background-color: #81b3d2;
@@ -706,11 +712,8 @@ div[class^="advantages-extra"],
 }
 
 .container-before-search-form a {
-    /*display: block был прописан выше*/
     margin: 0 auto;
-    width: 568px;
-    min-height: 86px;
-    
+    width: 568px;    
 }
 
 /*Временно скрываю visually-hidden*/
@@ -728,58 +731,6 @@ div[class^="advantages-extra"],
     margin: 0 auto;
     padding: 55px;
     width: 458px;
-}
-
-.container-for-date input {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 346px;
-    height: 38px;
-    padding: 6px 7px 6px 10px
-}
-
-.input-date {
-    margin-left: 19px;
-}
-
-.output-date {
-    margin-left: 16px;
-}
-button[class^="plus"],
-button[class^="minus"],
-.container-for-peoples-count input{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    height: 38px;
-    width: 38px;
-}
-
-.minus-adult {
-    margin-left: 36px;
-}
-
-.container-for-peoples-count input,
-button[class^="plus"] {
-    margin-left: -4px;
-}
-
-.container-for-peoples-count input {
-    text-align: center;
-}
-
-.plus-adult {
-    margin-right: 51px;
-}
-
-.container-for-peoples-count label:last-of-type {
-    margin-right: 23px;
-}
-
-.container-for-search .find {
-    width: 458px;
-    min-height: 58px;
-    
-    text-transform: uppercase;
 }
 
 /*Сетка для подвала*/
@@ -1183,4 +1134,128 @@ div[class^="advantages-extra-item"]::before {
 .advantages-item-5 p:last-of-type {
     margin-top: 21px;
     padding: 0 60px;
+}
+
+.container-before-search-form {
+    padding-top: 50px;
+}
+
+.container-before-search-form p:first-of-type {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.container-before-search-form p:last-of-type {
+    margin-bottom: 47px;
+    padding: 0 380px;
+}
+
+.container-before-search-form a {
+    padding: 30px 0;
+}
+
+.map {
+    position: relative;
+    z-index: 1;
+}
+
+.map form {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    
+    position: absolute;
+    top: 0;
+    left: 316px;
+    z-index: 2;
+    
+    background-color: #ffffff;
+}
+
+.form-search p {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.container-for-date {
+    position: relative;
+    
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.container-for-date label {
+    flex-basis: 112px;
+    padding-top: 6px;
+    padding-left: 1px;
+}
+
+.input-date,
+.output-date {
+    flex-basis: 346px;
+    padding-left: 11px;
+    box-sizing: border-box;
+}
+
+.container-for-date svg {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+.calendar {
+    fill: #a9a9a9;
+}
+
+.date:hover ~ .calendar,
+.date:focus ~ .calendar {
+    fill: #000000;
+}
+
+.date:active ~ .calendar {
+    fill: #81b3d2;
+}
+
+
+.container-for-peoples-count {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+.container-for-peoples-count label {
+    flex-basis: 112px;
+    padding-top: 7px;
+}
+
+.container-for-peoples-count label:last-of-type {
+    margin-left: auto;
+    padding-left: 48px;
+}
+
+.container-for-peoples-count button,
+.container-for-peoples-count input {
+    flex-basis: 38px;
+    width: 38px;
+    box-sizing: border-box;
+}
+
+.container-for-peoples-count .peoples-count-input {
+    padding-top: 7px;
+    padding-bottom: 1px;
+    padding-left: 13px;
+}
+
+.container-for-search {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-for-search .find {
+    width: 100%;
+    padding: 16px 0;
 }
