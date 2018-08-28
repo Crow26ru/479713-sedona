@@ -670,8 +670,8 @@ p[class^="advantages-intro"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-negative: 0;
         flex-shrink: 0;
 }
@@ -1126,3 +1126,61 @@ button[class^="plus"] {
     padding: 0 49px;
 }
 
+div[class^="advantages-extra-item"] {
+    position: relative;
+    padding-top: 147px;
+    padding-bottom: 82px;
+}
+
+div[class^="advantages-extra-item"]::before {
+    content: "";
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.advantages-extra-item-1::before {
+    top: 56px;
+    left: 159px;
+    
+    background-image: url("../img/house-icon.svg");
+}
+
+.advantages-extra-item-2::before {
+    top: 56px;
+    left: 160px;
+    
+    background-image: url("../img/eat-icon.svg");
+}
+
+.advantages-extra-item-3::before {
+    top: 54px;
+    left: 160px;
+    
+    background-image: url("../img/gift-icon.svg");
+}
+
+.advantages-extra p:last-of-type {
+    margin-top: 21px;
+    margin-bottom: 0;
+    padding: 0 50px;
+}
+
+.advantages-item-3,
+.advantages-item-4,
+.advantages-item-5 {
+    padding-top: 47px;
+    padding-bottom: 45px;
+}
+
+.advantages-item-3 p:last-of-type,
+.advantages-item-4 p:last-of-type,
+.advantages-item-5 p:last-of-type {
+    margin-top: 21px;
+    padding: 0 60px;
+}
