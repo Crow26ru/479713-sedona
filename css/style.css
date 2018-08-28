@@ -73,10 +73,22 @@ a {
     background-image: url("../img/polygon.svg"),
         url("../img/header-index-bg.jpg");
     background-size: 1200px, 1200px;
-    background-position: 0 453px, 0 -56px;
+    background-position: 0 451px, 0 -56px;
     background-repeat: no-repeat, no-repeat;
 }
 
+.main-header::before {
+    content: "";
+    
+    position: absolute;
+    top: 508px;
+    left: 0;
+    z-index: 2;
+    width: 1200px;
+    height: 2px;
+    
+    background-color: #ffffff;
+}
 .main-header img {
     position: absolute;
     top: 76px;
@@ -561,15 +573,12 @@ body .container {
 .main-navigator {
     position: relative;
     margin: 0;
-    padding: 0 73px;
-    
-    /*для визуального отображения*/
-    min-height: 56px;
+    padding: 0 72px;
 }
 
 .main-header-logo {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 530px;
     z-index: 10;
 }
@@ -580,14 +589,13 @@ body .container {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .site-navigation li {
     width: 128px;
-    /*для визуального отображения*/
-    min-height: 56px;
 }
 
 .site-navigation li:first-of-type {
@@ -595,7 +603,7 @@ body .container {
 }
 
 .site-navigation li:nth-of-type(2) {
-    margin-right: 330px;
+    margin-right: 315px;
 }
 
 .site-navigation li:last-of-type {
@@ -1061,3 +1069,17 @@ button[class^="plus"] {
     width: 110px;
     text-align: center;
 }
+
+/*  -----  Декоративные элементы  -----  */
+
+.site-navigation li {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 16px;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3) {
+    text-align: right;
+}
+
