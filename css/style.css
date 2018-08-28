@@ -643,10 +643,11 @@ p[class^="advantages-intro"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    align-items: flex-start;
 }
 
 .advantages-item-1-container {
@@ -1081,5 +1082,47 @@ button[class^="plus"] {
 .site-navigation li:last-child,
 .site-navigation li:nth-child(3) {
     text-align: right;
+}
+
+.advantages-intro-mark {
+    margin-top: 58px;
+    margin-bottom: 27px;
+    padding: 0 295px;
+}
+
+.advantages-intro {
+    margin-top: 0;
+    margin-bottom: 51px;
+}
+
+.advantages-item-1-container,
+.advantages-item-2-container,
+.advantages-item-3-container,
+.advantages-item-4-container, 
+.advantages-item-5-container {
+    padding-top: 47px;
+    padding-bottom: 45px;
+}
+
+.advantages h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0 124px;
+}
+
+.advantages-item-1-container p:first-of-type,
+.advantages-item-2-container p:first-of-type,
+.advantages-item-3-container p:first-of-type,
+.advantages-item-4-container p:first-of-type, 
+.advantages-item-5-container p:first-of-type {
+    margin-bottom: 21px;
+}
+
+.advantages-item-1-container p:nth-of-type(2),
+.advantages-item-2-container p:nth-of-type(2),
+.advantages-item-3-container p:nth-of-type(2),
+.advantages-item-4-container p:nth-of-type(2), 
+.advantages-item-5-container p:nth-of-type(2) {
+    padding: 0 49px;
 }
 
