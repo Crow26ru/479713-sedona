@@ -1,5 +1,21 @@
 /*  -----  Служебные стили  -----  */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*  -----  Конец служебных стилей  -----  */
 
 body {
@@ -616,13 +632,6 @@ body .container {
     margin-left: auto;
 }
 
-/*Временно скрываю visually-hidden*/
-
-.content h1,
-.advantages h2:first-of-type{
-    display: none;
-}
-
 /*Сетка для раздела Преимущества*/
 
 .advantages {
@@ -716,17 +725,6 @@ div[class^="advantages-extra"],
     width: 568px;    
 }
 
-/*Временно скрываю visually-hidden*/
-
-.map .visually-hidden,
-.form-search .visually-hidden{
-    display: none;
-}
-
-.map {
-    /*Форму может спрятать под картой?*/
-}
-
 .form-search {
     margin: 0 auto;
     padding: 55px;
@@ -757,21 +755,6 @@ div[class^="advantages-extra"],
             align-items: center;
 }
 
-.footer-social li {
-    display: inline-block;
-    margin-right: 6px;
-    margin-left: -4px;
-    width: 46px;
-}
-
-.footer-social a {
-    display: block;
-    min-height: 48px;
-    
-    text-indent: -100px;
-    overflow: hidden;
-}
-
 .author {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -792,11 +775,6 @@ div[class^="advantages-extra"],
 }
 
 /*  -----  Сетка страницы каталога  -----  */
-/*Временно скрываю таким образом*/
-
-.container h2 {
-    display: none;
-}
 
 /*Фильтр поиска*/
 
@@ -1258,4 +1236,35 @@ div[class^="advantages-extra-item"]::before {
 .container-for-search .find {
     width: 100%;
     padding: 16px 0;
+}
+
+.map-effect {
+    position: relative;
+    z-index: 2;
+    margin-top: -120px;
+    
+    background-color: rgba(254, 254, 254 0.9);
+}
+
+.hash-tag {
+    padding-top: 19px;
+    padding-left: 133px;
+    padding-bottom: 27px;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 36px 0;
+    width: 150px;
+}
+
+.footer-social a {
+    display: block;
+}
+
+.btn-social-tw {
+    
 }
