@@ -12,7 +12,9 @@ input[type="radio"].visually-hidden {
 
     white-space: nowrap;
 
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -242,7 +244,8 @@ a {
 
 .form-search label {
     display: block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     
     font-size: 14px;
     line-height: 26px;
@@ -611,7 +614,8 @@ body .container {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -662,7 +666,9 @@ p[class^="advantages-intro"] {
         flex-wrap: wrap;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .advantages-item-1-container {
@@ -1118,9 +1124,13 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .map form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     
     position: absolute;
     top: 0;
@@ -1131,10 +1141,15 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .form-search p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    flex-basis: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
 }
 
 .container-for-date {
@@ -1145,16 +1160,19 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .container-for-date label {
-    flex-basis: 112px;
+    -ms-flex-preferred-size: 112px;
+        flex-basis: 112px;
     padding-top: 6px;
     padding-left: 1px;
 }
 
 .input-date,
 .output-date {
-    flex-basis: 346px;
+    -ms-flex-preferred-size: 346px;
+        flex-basis: 346px;
     padding-left: 11px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .container-for-date svg {
@@ -1178,15 +1196,20 @@ div[class^="advantages-extra-item"]::before {
 
 
 .container-for-peoples-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     margin-bottom: 55px;
 }
 
 .container-for-peoples-count label {
-    flex-basis: 112px;
+    -ms-flex-preferred-size: 112px;
+        flex-basis: 112px;
     padding-top: 7px;
 }
 
@@ -1197,9 +1220,11 @@ div[class^="advantages-extra-item"]::before {
 
 .container-for-peoples-count button,
 .container-for-peoples-count input {
-    flex-basis: 38px;
+    -ms-flex-preferred-size: 38px;
+        flex-basis: 38px;
     width: 38px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .container-for-peoples-count .peoples-count-input {
@@ -1209,7 +1234,8 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .container-for-search {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin: 0;
     padding: 0;
 }
@@ -1238,11 +1264,18 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .footer-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     padding: 36px 0;
     padding-left: 36px;
     width: 150px;
@@ -1288,7 +1321,9 @@ div[class^="advantages-extra-item"]::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0;
 }
 
