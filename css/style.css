@@ -755,25 +755,6 @@ div[class^="advantages-extra"],
             align-items: center;
 }
 
-.author {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.author span {
-    margin-left: 100px;
-    margin-right: 8px;
-    margin-top: -12px;
-}
-
-.author svg {
-    margin-right: auto;
-}
-
 /*  -----  Сетка страницы каталога  -----  */
 
 /*Фильтр поиска*/
@@ -1238,18 +1219,22 @@ div[class^="advantages-extra-item"]::before {
     padding: 16px 0;
 }
 
+.main-footer {
+    margin-bottom: 0;
+}
+
 .map-effect {
     position: relative;
     z-index: 2;
-    margin-top: -120px;
+    margin-top: -126px;
     
-    background-color: rgba(254, 254, 254 0.9);
+    background-color: rgba(254, 254, 254, 0.9);
 }
 
 .hash-tag {
-    padding-top: 19px;
+    padding-top: 25px;
     padding-left: 133px;
-    padding-bottom: 27px;
+    padding-bottom: 21px;
 }
 
 .footer-social ul {
@@ -1257,7 +1242,9 @@ div[class^="advantages-extra-item"]::before {
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
     padding: 36px 0;
+    padding-left: 36px;
     width: 150px;
 }
 
@@ -1265,6 +1252,54 @@ div[class^="advantages-extra-item"]::before {
     display: block;
 }
 
+.btn-social:hover,
+.btn-social:focus {
+    background-color: #669ec0;
+}
+
+.btn-social:active {
+    background-color: #5496bd;
+}
+
+.btn-social:active path {
+    fill: #88b6d1;
+}
+
 .btn-social-tw {
-    
+    padding-top: 17px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 14px;
+}
+
+.btn-social-fb {
+    padding: 0 17px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+}
+
+.btn-social-yt {
+    padding: 0 13px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.author span {
+    display: block;
+    margin-top: 46px;
+    margin-left: 58px;
+    margin-right: 9px;
+}
+
+.author a {
+    display: block;
+    margin-top: 40px;
 }
