@@ -1217,13 +1217,13 @@ div[class^="advantages-extra-item"]::before {
 .map-effect {
     position: relative;
     z-index: 2;
-    margin-top: -126px;
+    margin-top: -125px;
     
-    background-color: rgba(254, 254, 254, 0.9);
+    background-color: rgba(254, 254, 254, .9);
 }
 
 .hash-tag {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-left: 133px;
     padding-bottom: 21px;
 }
@@ -1242,6 +1242,7 @@ div[class^="advantages-extra-item"]::before {
     -ms-flex-line-pack: justify;
         align-content: space-between;
     padding: 36px 0;
+    padding-top: 35px;
     padding-left: 36px;
     width: 150px;
 }
@@ -1294,14 +1295,14 @@ div[class^="advantages-extra-item"]::before {
 
 .author span {
     display: block;
-    margin-top: 46px;
+    margin-top: 45px;
     margin-left: 58px;
     margin-right: 9px;
 }
 
 .author a {
     display: block;
-    margin-top: 40px;
+    margin-top: 39px;
 }
 
 /*ДЕКОРАТИРВНЫЕ ЭЛЕМЕНТЫ СТРАНЦЫ КАТАЛОГА*/
