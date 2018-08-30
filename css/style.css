@@ -1191,14 +1191,13 @@ div[class^="advantages-extra-item"]::before {
 .container-for-peoples-count input {
     -ms-flex-preferred-size: 38px;
         flex-basis: 38px;
+    /*
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 2px;
     padding-right: 1px;
-    width: 38px;
+    */
     height: 38px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
 }
 
 .container-for-peoples-count button[class^="minus"] {
@@ -1207,11 +1206,8 @@ div[class^="advantages-extra-item"]::before {
 }
 
 .container-for-peoples-count .peoples-count-input {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 14px;
+    padding-left: 15px;
     width: 38px;
-    height: 38px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
