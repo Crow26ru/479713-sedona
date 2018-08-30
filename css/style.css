@@ -613,7 +613,9 @@ body .container {
     padding: 0;
     width: 1200px;
     
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
+    
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
 }
 
 .main-navigator {
@@ -1138,7 +1140,8 @@ div[class^="advantages-extra-item"]::before {
     z-index: 2;
     
     background-color: #ffffff;
-    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .form-search p {
@@ -1147,7 +1150,9 @@ div[class^="advantages-extra-item"]::before {
     display: flex;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container-for-date {
@@ -1465,7 +1470,8 @@ fieldset.search-filter-type-of-hotel {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .search-filter-range-input .right-range {
@@ -1489,7 +1495,8 @@ fieldset.search-filter-type-of-hotel {
     background: #ababab;
     border: 9px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .search-filter-range-input .right-range:hover {
@@ -1533,24 +1540,35 @@ fieldset.search-filter-type-of-hotel {
 }
 
 .search-result-item-info .info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    flex-grow: 0;
-    justify-content: space-between;
-    align-items: flex-start;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0;
     padding: 0;
     width: 258px;
 }
 
 .info-container left-column {
-    flex-basis: 110px;
+    -ms-flex-preferred-size: 110px;
+        flex-basis: 110px;
     margin: 0;
     padding: 0;
 }
 
 .info-container right-column {
-    flex-basis: 142px;
+    -ms-flex-preferred-size: 142px;
+        flex-basis: 142px;
     margin: 0;
     padding: 0;
 }
