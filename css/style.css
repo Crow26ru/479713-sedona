@@ -88,11 +88,10 @@ a {
     min-height: 510px;
     
     background-color: #dfebf2;
-    background-image: url("../img/polygon.svg"),
-        url("../img/header-index-bg.jpg");
-    background-size: 1200px, 1200px;
-    background-position: 0 451px, 0 -56px;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url("../img/header-index-bg.jpg");
+    background-size: 1200px;
+    background-position: 0 -56px;
+    background-repeat: no-repeat;
 }
 
 .main-header::before {
@@ -102,11 +101,30 @@ a {
     top: 508px;
     left: 0;
     z-index: 2;
+    
     width: 1200px;
     height: 2px;
     
     background-color: #ffffff;
 }
+
+.main-header::after {
+    content: "";
+    
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    z-index: 2;
+    
+    display: block;
+    width: 1200px;
+    height: 57px;
+    
+    background-color: transparent;
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+}
+
 .main-header img {
     position: absolute;
     top: 76px;
