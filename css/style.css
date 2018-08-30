@@ -301,7 +301,6 @@ button[class^="minus"] {
     
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
     color: #a9a9a9;
     
     background-color: #f2f2f2;
@@ -1179,7 +1178,6 @@ div[class^="advantages-extra-item"]::before {
 .container-for-peoples-count label {
     -ms-flex-preferred-size: 112px;
         flex-basis: 112px;
-    padding-top: 3px;
 }
 
 .container-for-peoples-count label:last-of-type {
@@ -1191,18 +1189,18 @@ div[class^="advantages-extra-item"]::before {
 .container-for-peoples-count input {
     -ms-flex-preferred-size: 38px;
         flex-basis: 38px;
-    /*
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 2px;
-    padding-right: 1px;
-    */
     height: 38px;
 }
 
 .container-for-peoples-count button[class^="minus"] {
     padding-top: 2px;
     padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.container-for-peoples-count button[class^="plus"] {
+    
 }
 
 .container-for-peoples-count .peoples-count-input {
