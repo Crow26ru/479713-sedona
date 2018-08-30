@@ -398,7 +398,7 @@ button[class^="minus"]:active {
     background-image: url("../img/filter-bg-catalog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -50px;
+    background-position: 0 -55px;
 }
 
 .search-filter fieldset {
@@ -920,13 +920,8 @@ div[class^="advantages-extra"],
     margin-bottom: 8px;
 }
 
-.search-result-item-info .type {
-    padding-right: 35px; 
-}
-
 .btn-detail {
-    display: inline-block;
-    margin-right: 6px;
+    display: block;
     padding: 3px 0;
     width: 110px;
     
@@ -934,8 +929,7 @@ div[class^="advantages-extra"],
 }
 
 .btn-order {
-    display: inline-block;
-    margin-left: -4px;
+    display: block;
     padding: 3px 0;
     width: 142px;
     
@@ -1408,44 +1402,41 @@ fieldset.search-filter-type-of-hotel {
     min-height: 8px;
 }
 
-.search-filter-range-input .left-range {
+.search-filter-range-input::before,
+.search-filter-range-input::after {
+    content: "";
+    
     position: absolute;
     top: 6px;
     left: 11px;
-    z-index: 2;
     
     display: block;
     padding: 0;
     margin: 0;
-    width: 307px;
     height: 2px;
+}
+
+.search-filter-range-input::before {
+    z-index: 2;
+    
+    width: 307px;
     
     background-color: #928381;
 }
 
-.search-filter-range-input .right-range {
-    position: absolute;
-    top: 6px;
-    left: 11px;
+.search-filter-range-input::after {
     z-index: 3;
     
-    display: block;
-    padding: 0;
-    margin: 0;
     width: 253px;
-    height: 2px;
     
     background-color: #ffffff;
 }
 
-.search-filter-range-input .right-range::before {
-    content: "";
-    
+.search-filter-range-input .right-range,
+.search-filter-range-input .left-range {
     position: absolute;
-    top: -9px;
-    left: -10px;
     z-index: 4;
-
+    
     width: 4px;
     height: 4px;
 
@@ -1455,21 +1446,38 @@ fieldset.search-filter-type-of-hotel {
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
-.search-filter-range-input .right-range::after {
-    content: "";
-    
-    position: absolute;
-    top: -9px;
-    left: 242px;
-    z-index: 4;
+.search-filter-range-input .right-range {
+    top: -3px;
+    left: 1px;
+}
 
+.search-filter-range-input .left-range {
+    top: -3px;
+    left: 253px;
+}
+
+.search-filter-range-input .right-range:hover,
+.search-filter-range-input .left-range:hover {
+    position: absolute;
+    z-index: 4;
+    
     width: 4px;
     height: 4px;
 
     background: #ababab;
-    border: 8px solid #ffffff;
+    border: 9px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.search-filter-range-input .right-range:hover {
+    top: -4px;
+    left: 0;
+}
+
+.search-filter-range-input .left-range:hover {
+    top: -4px;
+    left: 252px;
 }
 
 .container-form-item .show {
@@ -1500,4 +1508,31 @@ fieldset.search-filter-type-of-hotel {
 
 .search-result-item-action {
     margin: 0;
+}
+
+.search-result-item-info .info-container {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 258px;
+}
+
+.info-container left-column {
+    flex-basis: 110px;
+    margin: 0;
+    padding: 0;
+}
+
+.info-container right-column {
+    flex-basis: 142px;
+    margin: 0;
+    padding: 0;
+}
+
+.info-container a {
+    margin-top: 14px;
 }
