@@ -38,6 +38,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .main-navigator {
     font-size: 14px;
     line-height: 26px;
@@ -129,6 +134,9 @@ a {
     position: absolute;
     top: 76px;
     left: 370px;
+    
+    width: 459px;
+    height: 353px;
 }
 
 /*Стилизация секции "Преймущества" на главной странице*/
@@ -621,6 +629,11 @@ body .container {
     z-index: 10;
 }
 
+.main-header-logo img {
+    width: 140px;
+    height: 72px;
+}
+
 .site-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -694,8 +707,11 @@ p[class^="advantages-intro"] {
         flex-basis: 800px;
 }
 
-.advantages-item-1-img-container img {
+.advantages-item-1-img-container img,
+.advantages-item-2-img-container img {
     display: block;
+    width: 800px;
+    height: 256px;
 }
 
 .advantages-extra {
@@ -733,10 +749,6 @@ div[class^="advantages-extra"],
 .advantages-item-2-img-container {
     -ms-flex-preferred-size: 800px;
         flex-basis: 800px;
-}
-
-.advantages-item-2-img-container img {
-    display: block;
 }
 
 .container-before-search-form a {
@@ -907,6 +919,10 @@ div[class^="advantages-extra"],
     margin: 30px 30px 30px 72px;
     -ms-flex-preferred-size: 135px;
         flex-basis: 135px;
+}
+
+.preview-photo img {
+    width: 135px;
 }
 
 .search-result-item-info {
@@ -1109,6 +1125,12 @@ div[class^="advantages-extra-item"]::before {
     z-index: 1;
 }
 
+.map img {
+    display: block;
+    width: 1200px;
+    height: 593px;
+}
+
 .map form {
     position: absolute;
     top: 0;
@@ -1236,7 +1258,7 @@ div[class^="advantages-extra-item"]::before {
 .map-effect {
     position: relative;
     z-index: 2;
-    margin-top: -125px;
+    margin-top: -119px;
     
     background-color: rgba(254, 254, 254, .9);
 }
