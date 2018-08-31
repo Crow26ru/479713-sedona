@@ -268,10 +268,32 @@ img {
 
 /*Стилизация формы поиска жилья на главной странице*/
 
+.map form {
+    position: absolute;
+    top: 0;
+    left: 316px;
+    z-index: 2;
+    
+    max-width: 458px;
+    
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.form-search p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 .form-search label {
     display: block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     
     font-size: 14px;
     font-weight: bold;
@@ -286,6 +308,8 @@ img {
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
+    
+    box-sizing: border-box;
     
     background-color: #f2f2f2;
 }
@@ -303,8 +327,73 @@ img {
     outline: none;
 }
 
-button[class^="plus"],
-button[class^="minus"] {
+.form-search .container-for-date {
+    position: relative;
+    
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.form-search .input-date-label,
+.form-search .output-date-label {
+    -ms-flex-preferred-size: 112px;
+        flex-basis: 112px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.form-search .input-date,
+.form-search .output-date {
+    -ms-flex-preferred-size: 346px;
+        flex-basis: 346px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 22px;
+}
+
+.container-for-date svg {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+.calendar {
+    fill: #a9a9a9;
+}
+
+.date:hover ~ .calendar,
+.date:focus ~ .calendar {
+    fill: #000000;
+}
+
+.date:active ~ .calendar {
+    fill: #81b3d2;
+}
+
+
+.form-search .container-for-peoples-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+
+.form-search .count-adults-label {
+    margin-right: 41px;
+    max-width: 72px;
+}
+
+.form-search .count-children-label {
+    margin-right: 27px;
+    margin-left: 54px;
+    max-width: 38px;
+}
+
+.container-for-peoples-count button {        
     border: none;
     
     font-size: 24px;
@@ -312,6 +401,42 @@ button[class^="minus"] {
     color: #a9a9a9;
     
     background-color: #f2f2f2;
+}
+
+.container-for-peoples-count button[class^="minus"] {
+    padding-top: 4px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.container-for-peoples-count button[class^="plus"] {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 13px;
+}
+
+
+.container-for-peoples-count input.peoples-count-input {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    box-sizing: content-box;
+    
+    text-align: center;
+}
+
+.container-for-search {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-for-search .find {
+    width: 100%;
+    padding: 16px 0;
 }
 
 button[class^="plus"]:hover,
@@ -1133,128 +1258,7 @@ div[class^="advantages-extra-item"]::before {
     height: 593px;
 }
 
-.map form {
-    position: absolute;
-    top: 0;
-    left: 316px;
-    z-index: 2;
-    
-    background-color: #ffffff;
-    -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
-            box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
-}
 
-.form-search p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.container-for-date {
-    position: relative;
-    
-    margin: 0;
-    margin-bottom: 29px;
-}
-
-.container-for-date label {
-    -ms-flex-preferred-size: 112px;
-        flex-basis: 112px;
-    padding-top: 1px;
-    padding-left: 1px;
-}
-
-.input-date,
-.output-date {
-    -ms-flex-preferred-size: 346px;
-        flex-basis: 346px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 11px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-.container-for-date svg {
-    position: absolute;
-    top: 8px;
-    right: 9px;
-}
-
-.calendar {
-    fill: #a9a9a9;
-}
-
-.date:hover ~ .calendar,
-.date:focus ~ .calendar {
-    fill: #000000;
-}
-
-.date:active ~ .calendar {
-    fill: #81b3d2;
-}
-
-
-.container-for-peoples-count {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 55px;
-}
-
-.container-for-peoples-count label {
-    -ms-flex-preferred-size: 112px;
-        flex-basis: 112px;
-}
-
-.container-for-peoples-count label:last-of-type {
-    margin-left: auto;
-    padding-left: 48px;
-}
-
-.container-for-peoples-count button,
-.container-for-peoples-count input {
-    -ms-flex-preferred-size: 38px;
-        flex-basis: 38px;
-    height: 38px;
-}
-
-.container-for-peoples-count button[class^="minus"] {
-    padding-top: 2px;
-    padding-bottom: 6px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-.container-for-peoples-count button[class^="plus"] {
-    
-}
-
-.container-for-peoples-count .peoples-count-input {
-    padding-left: 15px;
-    width: 38px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.container-for-search {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container-for-search .find {
-    width: 100%;
-    padding: 16px 0;
-}
 
 .main-footer {
     margin-bottom: 0;
