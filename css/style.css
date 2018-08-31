@@ -1111,6 +1111,8 @@ div[class^="advantages-extra"],
 .star-container img {
     margin-right: 1px;
     margin-left: 5px;
+    width: 18px;
+    height: 17px;
 }
 
 .rating-mark {
