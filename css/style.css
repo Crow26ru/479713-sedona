@@ -309,7 +309,9 @@ img {
     color: #000000;
     text-transform: uppercase;
     
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+            box-sizing: border-box;
     
     background-color: #f2f2f2;
 }
@@ -376,7 +378,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     margin-top: 30px;
     margin-bottom: 55px;
@@ -422,7 +426,8 @@ img {
     padding: 0;
     width: 34px;
     height: 34px;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     
     text-align: center;
 }
