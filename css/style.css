@@ -387,14 +387,14 @@ img {
 }
 
 .form-search .count-adults-label {
-    margin-right: 41px;
-    max-width: 72px;
+    margin-right: 40px;
+    width: 72px;
 }
 
 .form-search .count-children-label {
     margin-right: 27px;
     margin-left: 54px;
-    max-width: 38px;
+    width: 38px;
 }
 
 .container-for-peoples-count button {        
@@ -442,6 +442,7 @@ img {
 .container-for-search .find {
     width: 100%;
     padding: 16px 0;
+    outline: 0;
 }
 
 button[class^="plus"]:hover,
@@ -449,6 +450,7 @@ button[class^="minus"]:hover,
 button[class^="plus"]:focus,
 button[class^="minus"]:focus {
     color: #000000;
+    outline: 0;
 }
 
 button[class^="plus"]:active,
