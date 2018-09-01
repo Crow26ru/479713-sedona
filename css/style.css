@@ -959,7 +959,7 @@ div[class^="advantages-extra"],
 
 .search-filter-infrastructure label,
 .search-filter-type-of-hotel label {
-    margin-left: 40px
+    padding-left: 40px
 }
 
 .search-filter-infrastructure legend,
@@ -1377,7 +1377,7 @@ fieldset.search-filter-type-of-hotel {
 }
 
 .search-filter-type-of-hotel label {
-    margin-left: 42px;
+    padding-left: 42px;
 }
 
 .container-form-item {
@@ -1588,4 +1588,42 @@ fieldset.search-filter-type-of-hotel {
 
 .info-container a {
     margin-top: 14px;
+}
+
+/*  -----  Нестандартные элементы формы  -----  */
+
+.search-filter label {
+    position: relative;
+    
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label > .custom-checkbox {
+    position: absolute;
+    
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid white;
+    border-radius: 2px;
+    
+    background-color: transparent;
+}
+
+.input[type="checkbox"]:focus + label > .custom-checkbox {
+    outline: thin dotted;
+    outline: 5px auto;
+}
+
+.input[type="checkbox"]:checked + label > .custom-checkbox {
+    top: -2px;
+    left: -2px;
+    
+    width: 27px;
+    height: 23px;
+    border: none;
+    border-radius: none;
+    
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
 }
