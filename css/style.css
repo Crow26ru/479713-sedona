@@ -297,7 +297,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 
 .form-search label {
@@ -526,6 +526,7 @@ img {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    text-align: center;
 }
 
 .btn-social {
@@ -941,20 +942,13 @@ div[class^="advantages-extra"],
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    align-items: flex-start;
 }
 
 .main-footer div,
 .main-footer p {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
-}
-
-.hash-tag,
-.footer-social,
-.author {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 /*  -----  Сетка страницы каталога  -----  */
@@ -1300,24 +1294,29 @@ div[class^="advantages-extra-item"]::before {
     height: 593px;
 }
 
-
-
 .main-footer {
-    margin-bottom: 0;
+    margin: 0;
+    min-height: 120px;
 }
 
 .map-effect {
     position: relative;
     z-index: 2;
-    margin-top: -119px;
+    margin-top: -120px;
     
     background-color: rgba(254, 254, 254, .9);
 }
 
-.hash-tag {
-    padding-top: 24px;
-    padding-left: 133px;
-    padding-bottom: 21px;
+.main-footer .hash-tag {
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 46px;
+}
+
+.main-footer .footer-social {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .footer-social ul {
@@ -1333,14 +1332,23 @@ div[class^="advantages-extra-item"]::before {
             justify-content: space-between;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    padding: 36px 0;
-    padding-top: 35px;
-    padding-left: 36px;
+    align-items: center;
+    margin: 0;
+    margin-top: 36px;
+    margin-left: -1px;
     width: 150px;
+}
+
+.footer-social li {
+    flex-basis: 46px;
+    height: 48px;
+    
+    overflow: hidden;
 }
 
 .footer-social a {
     display: block;
+    height: 48px;
 }
 
 .btn-social:hover,
@@ -1379,22 +1387,20 @@ div[class^="advantages-extra-item"]::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .author span {
-    display: block;
-    margin-top: 45px;
-    margin-left: 58px;
-    margin-right: 9px;
+    margin-top: 14px;
+    margin-left: 2px;
 }
 
 .author a {
     display: block;
-    margin-top: 39px;
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 26px;
 }
 
 /*ДЕКОРАТИРВНЫЕ ЭЛЕМЕНТЫ СТРАНЦЫ КАТАЛОГА*/
