@@ -52,7 +52,7 @@ img {
 }
 
 main.content {
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 .site-navigation,
@@ -789,6 +789,7 @@ body .container {
     margin: 0 auto;
     padding: 0;
     width: 1200px;
+    background-color: #ffffff;
     
     -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
     
