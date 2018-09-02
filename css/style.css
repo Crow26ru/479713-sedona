@@ -239,15 +239,17 @@ img {
 }
 
 .btn-open-form {
-    display: block;
+    margin: 0;
+    margin-left: 317px;
+    padding: 30px 0;
+    width: 568px;
+    border: none;
     
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-align: center;    
-}
-
-.btn-open-form {
+    text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
     
     background-color: #766357;
@@ -1299,6 +1301,10 @@ div[class^="advantages-extra-item"]::before {
     min-height: 120px;
 }
 
+.main-footer p,
+.main-footer div {
+    overflow: hidden;
+}
 .map-effect {
     position: relative;
     z-index: 2;
@@ -1549,6 +1555,7 @@ fieldset.search-filter-type-of-hotel {
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
             box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .search-filter-range-input .right-range:hover {
