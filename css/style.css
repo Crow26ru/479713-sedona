@@ -51,6 +51,10 @@ img {
     background-color: #ffffff;
 }
 
+main.content {
+    background: #ffffff;
+}
+
 .site-navigation,
 .footer-social ul,
 .sort-links,
@@ -522,6 +526,10 @@ img {
 
 .main-footer {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-fix-bg {
+    background: #fefefe;
 }
 
 .hash-tag {
@@ -1006,6 +1014,9 @@ div[class^="advantages-extra"],
 }
 
 /*Раздел результатов поиска*/
+.search-result {
+    background: #fefefe;    
+}
 
 .search-result-filter {
     display: -webkit-box;
