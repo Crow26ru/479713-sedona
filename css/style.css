@@ -1474,6 +1474,7 @@ fieldset.search-filter-type-of-hotel {
 .search-filter-range-params label {
     display: inline-block;
     line-height: 21px;
+    vertical-align: baseline;
 }
 
 .search-filter-range-params label:first-of-type {
