@@ -1473,7 +1473,6 @@ fieldset.search-filter-type-of-hotel {
 
 .search-filter-range-params label {
     display: inline-block;
-    line-height: 21px;
     vertical-align: baseline;
 }
 
@@ -1674,7 +1673,7 @@ fieldset.search-filter-type-of-hotel {
     top: -3px;
 }
 
-input[type="checkbox"]:focus + label > .custom-checkbox {
+input[type="checkbox"]:focus + label .custom-checkbox {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
