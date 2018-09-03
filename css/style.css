@@ -1279,6 +1279,8 @@ div[class^="advantages-extra-item"]::before {
 
 .container-before-search-form {
     padding-top: 50px;
+    
+    background-color: #ffffff;
 }
 
 .container-before-search-form p:first-of-type {
