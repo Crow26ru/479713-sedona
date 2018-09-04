@@ -21,6 +21,7 @@ window.addEventListener("keydown", function(e) {
 buttonListeningForm.addEventListener("click", function(e) {
     e.preventDefault();
     formOrder.classList.remove("start-status");
+				
     if (!formOrder.classList.contains("form-close") && !formOrder.classList.contains("form-open")) {
         formOrder.classList.add("form-open");
     } else if (formOrder.classList.contains("form-close")) {
@@ -31,6 +32,7 @@ buttonListeningForm.addEventListener("click", function(e) {
         focusOnInput.focus();
     } else {
         formOrder.classList.remove("form-open");
+								formOrder.classList.remove("form-error");
         formOrder.classList.add("form-close");
     }
 });
@@ -43,5 +45,6 @@ submitForm.addEventListener("click", function(e) {
 				
 				if (inputDate.value == "" || outputDate.value == "" || (parseInt(adultsCount.value, 10) === 0 && parseInt(childrensCount.value, 10) === 0)) {
 								e.preventDefault();
+								formOrder.classList.add("form-error");
 				}
 });
