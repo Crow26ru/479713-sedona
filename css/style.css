@@ -899,7 +899,7 @@ body .container {
     margin: 0;
 }
 
-p[class^="advantages-intro"] {
+.advantages p[class^="advantages-intro"] {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
 }
@@ -949,7 +949,7 @@ p[class^="advantages-intro"] {
         flex-shrink: 0;
 }
 
-div[class^="advantages-extra"],
+.advantages div[class^="advantages-extra"],
 .advantages-item-3,
 .advantages-item-4,
 .advantages-item-5 {
@@ -1261,13 +1261,13 @@ div[class^="advantages-extra"],
     padding: 0 49px;
 }
 
-div[class^="advantages-extra-item"] {
+.advantages div[class^="advantages-extra-item"] {
     position: relative;
     padding-top: 147px;
     padding-bottom: 82px;
 }
 
-div[class^="advantages-extra-item"]::before {
+.advantages div[class^="advantages-extra-item"]::before {
     content: "";
     
     position: absolute;
@@ -1703,7 +1703,7 @@ fieldset.search-filter-type-of-hotel {
     cursor: pointer;
 }
 
-.search-filter input[type="checkbox"] + label > .custom-checkbox {
+.chkb[type="checkbox"] + label > .custom-checkbox {
     position: absolute;
     top: -2px;
     left: 1px;
@@ -1722,12 +1722,12 @@ fieldset.search-filter-type-of-hotel {
     top: -3px;
 }
 
-input[type="checkbox"]:focus + label .custom-checkbox {
+.chkb[type="checkbox"]:focus + label .custom-checkbox {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
 
-input[type="checkbox"]:checked + label .custom-checkbox {
+.chkb[type="checkbox"]:checked + label .custom-checkbox {
     top: -2px;
     left: 1px;
     
