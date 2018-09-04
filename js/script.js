@@ -38,13 +38,13 @@ buttonListeningForm.addEventListener("click", function(e) {
 });
 
 submitForm.addEventListener("click", function(e) {
-				var inputDate = formOrder.querySelector(".input-date");
-				var outputDate = formOrder.querySelector(".output-date");
-				var adultsCount = formOrder.querySelector(".adult-container input");
-				var childrensCount = formOrder.querySelector(".children-container input");
+    var inputDate = formOrder.querySelector(".input-date");
+	var outputDate = formOrder.querySelector(".output-date");
+	var adultsCount = formOrder.querySelector(".adult-container input");
+	var childrensCount = formOrder.querySelector(".children-container input");
 				
-				if (inputDate.value == "" || outputDate.value == "" || (parseInt(adultsCount.value, 10) === 0 && parseInt(childrensCount.value, 10) === 0)) {
-								e.preventDefault();
-								formOrder.classList.add("form-error");
-				}
+	if (inputDate.value == "" || outputDate.value == "" || (parseInt(adultsCount.value, 10) == 0 && parseInt(childrensCount.value, 10) == 0)) {
+        e.preventDefault();
+        formOrder.classList.add("form-error");
+    }
 });
