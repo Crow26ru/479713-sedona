@@ -43,7 +43,7 @@ submitForm.addEventListener("click", function(e) {
 	var adultsCount = formOrder.querySelector(".adult-container input");
 	var childrensCount = formOrder.querySelector(".children-container input");
 				
-	if (inputDate.value == "" || outputDate.value == "" || (parseInt(adultsCount.value, 10) == 0 && parseInt(childrensCount.value, 10) == 0)) {
+	if (inputDate.value == "" || outputDate.value == "" || (adultsCount.value == 0 && childrensCount.value == 0)) {
         e.preventDefault();
         formOrder.classList.add("form-error");
     }
