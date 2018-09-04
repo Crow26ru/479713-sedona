@@ -314,6 +314,10 @@ main.content {
     animation-fill-mode: forwards;
 }
 
+.map iframe {
+    border: none;
+}
+
 .form-search p {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1328,23 +1332,6 @@ div[class^="advantages-extra-item"]::before {
     z-index: 1;
     
     overflow: hidden;
-}
-
-.map-js-on iframe,
-.map-js-off iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.map-js-on img,
-.map-js-off iframe {
-    z-index: -1;
-}
-
-.map-js-on iframe,
-.map-js-off img {
-    z-index: 2;
 }
 
 .map img {

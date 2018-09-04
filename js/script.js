@@ -1,6 +1,15 @@
 var formOrder = document.querySelector(".map form");
 var buttonListeningForm = document.querySelector(".btn-open-form");
-formOrder.classList.add("start-status");
+var mapLink = document.querySelector(".map a");
+var interactiveMap = document.querySelector(".map iframe");
+
+
+
+window.addEventListener("load", function() {
+    formOrder.classList.add("start-status");
+    mapLink.classList.add("visually-hidden");
+    interactiveMap.classList.remove("visually-hidden");
+});
 
 
 buttonListeningForm.addEventListener("click", function(e) {
