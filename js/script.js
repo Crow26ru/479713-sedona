@@ -2,8 +2,7 @@ var formOrder = document.querySelector(".map form");
 var buttonListeningForm = document.querySelector(".btn-open-form");
 var mapLink = document.querySelector(".map a");
 var interactiveMap = document.querySelector(".map iframe");
-
-
+var submitForm = document.querySelector(".map .find");
 
 window.addEventListener("load", function() {
     formOrder.classList.add("start-status");
@@ -11,6 +10,13 @@ window.addEventListener("load", function() {
     interactiveMap.classList.remove("visually-hidden");
 });
 
+window.addEventListener("keydown", function(e) {
+				if (e.keyCode === 27 && formOrder.classList.contains("form-open")) {
+								e.preventDefault();
+								formOrder.classList.remove("form-open");
+        formOrder.classList.add("form-close");
+				}
+});
 
 buttonListeningForm.addEventListener("click", function(e) {
     e.preventDefault();
@@ -27,4 +33,15 @@ buttonListeningForm.addEventListener("click", function(e) {
         formOrder.classList.remove("form-open");
         formOrder.classList.add("form-close");
     }
+});
+
+submitForm.addEventListener("click", function(e) {
+				var inputDate = formOrder.querySelector(".input-date");
+				var outputDate = formOrder.querySelector(".output-date");
+				var adultsCount = formOrder.querySelector(".adult-container input");
+				var childrensCount = formOrder.querySelector(".children-container input");
+				
+				if (inputDate.value == "" || outputDate.value == "" || (parseInt(adultsCount.value, 10) === 0 && parseInt(childrensCount.value, 10) === 0)) {
+								e.preventDefault();
+				}
 });
