@@ -10,9 +10,9 @@
 }
 
 @keyframes input-error {
-				0%, 100% {transform: translateX(0);}
-				10%, 30%, 50%, 70%, 90% {transform: translateX(-15px);}
-				20%, 40%, 60%, 80% {transform: translateX(15px);}
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-15px);}
+	20%, 40%, 60%, 80% {transform: translateX(15px);}
 }
 
 /*  -----  Служебные стили  -----  */
@@ -76,9 +76,10 @@ main.content {
 .footer-social ul,
 .sort-links,
 .search-result-list {
-    list-style: none;
     margin: 0;
     padding: 0;
+    
+    list-style: none;
 }
 
 .site-navigation a {
@@ -321,7 +322,7 @@ main.content {
 }
 
 .map .form-error {
-				animation-name: input-error;
+    animation-name: input-error;
     animation-duration: 0.6s;
     animation-timing-function: linear;
 }
@@ -364,10 +365,11 @@ main.content {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
     text-transform: uppercase;
+    color: #000000;
     
     background-color: #f2f2f2;
+    
     transition-duration: 0.5s;
 }
 
@@ -381,6 +383,7 @@ main.content {
     border: 2px solid #e5e5e5;
     
     background-color: #ffffff;
+    
     outline: none;
 }
 
@@ -411,9 +414,11 @@ main.content {
     position: absolute;
     top: 2px;
     right: 2px;
+    
     width: 34px;
     height: 34px;
     border: none;
+    
     background-color: transparent;
 }
 
@@ -538,6 +543,7 @@ main.content {
 .container-for-search .find {
     width: 100%;
     padding: 16px 0;
+    
     outline: 0;
 }
 
@@ -579,8 +585,8 @@ main.content {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
     text-align: center;
+    color: #000000;
 }
 
 .btn-social {
@@ -622,6 +628,8 @@ main.content {
 /*Стилизация формы фильтра на странице каталога*/
 
 .search-filter {
+    padding-bottom: 31px;
+    
     background-color: #566571;
     background-image: url("../img/filter-bg-catalog.jpg");
     background-repeat: no-repeat;
@@ -1006,10 +1014,6 @@ body .container {
 
 /*Фильтр поиска*/
 
-.search-filter {
-    min-height: 217px;
-}
-
 .search-filter form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1048,8 +1052,7 @@ body .container {
 .search-filter-infrastructure p,
 .search-filter-type-of-hotel p {
     margin-top: 0;
-    margin-bottom: 22px;
-    min-height: 24px;
+    margin-bottom: 25px;
 }
 
 .search-filter-infrastructure p:last-of-type,
@@ -1165,10 +1168,6 @@ body .container {
     width: 142px;
     
     text-align: center;
-}
-
-.btn-order span {
-    vertical-align: bottom;
 }
 
 .search-result-item-rating {
@@ -1366,6 +1365,7 @@ body .container {
 .map-effect {
     position: relative;
     z-index: 2;
+    
     margin-top: -120px;
     
     background-color: rgba(254, 254, 254, .9);
@@ -1517,11 +1517,12 @@ fieldset.search-filter-type-of-hotel {
 }
 
 .search-filter-range-params input {
-    width: 60px;
+    width: 50px;
 }
 
 .search-filter-range-params label {
     display: inline-block;
+    
     vertical-align: baseline;
 }
 
@@ -1535,7 +1536,7 @@ fieldset.search-filter-type-of-hotel {
 }
 
 .search-filter-range-params label:last-of-type {
-    padding-left: 49px;
+    padding-left: 59px;
 }
 
 .search-filter-range-input {
@@ -1543,7 +1544,7 @@ fieldset.search-filter-type-of-hotel {
     z-index: 1;
     
     margin-bottom: 32px;
-    min-height: 8px;
+    padding: 4px 0;
 }
 
 .search-filter-range-input::before,
@@ -1555,8 +1556,8 @@ fieldset.search-filter-type-of-hotel {
     left: 11px;
     
     display: block;
-    padding: 0;
     margin: 0;
+    padding: 0;
     height: 2px;
 }
 
@@ -1629,8 +1630,8 @@ fieldset.search-filter-type-of-hotel {
 
 .container-form-item .show {
     margin-left: 85px;
+    padding: 8px 0;
     width: 137px;
-    min-height: 36px;
     
     text-transform: uppercase;
 }
