@@ -1223,10 +1223,7 @@ body .container {
 }
 
 .advantages-item-1-container,
-.advantages-item-2-container,
-.advantages-item-3-container,
-.advantages-item-4-container, 
-.advantages-item-5-container {
+.advantages-item-2-container {
     padding-top: 47px;
     padding-bottom: 45px;
 }
@@ -1238,18 +1235,12 @@ body .container {
 }
 
 .advantages-item-1-container p:first-of-type,
-.advantages-item-2-container p:first-of-type,
-.advantages-item-3-container p:first-of-type,
-.advantages-item-4-container p:first-of-type, 
-.advantages-item-5-container p:first-of-type {
+.advantages-item-2-container p:first-of-type {
     margin-bottom: 21px;
 }
 
 .advantages-item-1-container p:nth-of-type(2),
-.advantages-item-2-container p:nth-of-type(2),
-.advantages-item-3-container p:nth-of-type(2),
-.advantages-item-4-container p:nth-of-type(2), 
-.advantages-item-5-container p:nth-of-type(2) {
+.advantages-item-2-container p:nth-of-type(2) {
     padding: 0 49px;
 }
 
