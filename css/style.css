@@ -164,11 +164,19 @@ main.content {
 /*Стилизация секции "Преймущества" на главной странице*/
 
 .advantages-intro-mark {
+    margin: 26px 0;
+    padding: 0 295px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-align: center;
     color: #000000;
+}
+
+.advantages-intro-mark:first-of-type {
+    margin: 0;
+    margin-bottom: 27px;
 }
 
 .advantages-intro {
@@ -903,8 +911,9 @@ body .container {
         flex-wrap: wrap;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    padding-top: 58px;
 }
 
 .advantages p[class^="advantages-intro"] {
@@ -914,8 +923,6 @@ body .container {
 
 .advantages-item-1,
 .advantages-item-2 {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -926,6 +933,8 @@ body .container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
 }
 
 .advantages-item-1-container {
@@ -1219,14 +1228,12 @@ body .container {
     text-align: right;
 }
 
-.advantages-intro-mark {
-    margin-top: 58px;
-    margin-bottom: 27px;
-    padding: 0 295px;
-}
-
 .advantages-intro {
     margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.advantages-intro:last-of-type {
     margin-bottom: 51px;
 }
 
