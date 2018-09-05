@@ -1213,8 +1213,8 @@ body .container {
     padding-bottom: 16px;
 }
 
-.site-navigation li:last-child,
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n),
+.site-navigation li:nth-child(4n+3) {
     text-align: right;
 }
 
