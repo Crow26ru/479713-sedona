@@ -1285,16 +1285,12 @@ body .container {
     padding: 0 50px;
 }
 
-.advantages-item-3,
-.advantages-item-4,
-.advantages-item-5 {
+.advantages .advantages-item-small {
     padding-top: 47px;
     padding-bottom: 45px;
 }
 
-.advantages-item-3 p:last-of-type,
-.advantages-item-4 p:last-of-type,
-.advantages-item-5 p:last-of-type {
+.advantages-item-small p:last-of-type {
     margin-top: 21px;
     padding: 0 60px;
 }
