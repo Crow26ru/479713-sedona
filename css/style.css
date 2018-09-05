@@ -995,6 +995,7 @@ body .container {
     align-items: flex-start;
     margin: 0;
     padding: 36px 0;
+    padding-bottom: 31px;
 }
 
 .main-footer div,
@@ -1067,6 +1068,7 @@ body .container {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding: 0 72px;
+    padding-left: 71px;
 }
 
 .search-result-output-text {
@@ -1088,7 +1090,11 @@ body .container {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin-right: 503px;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    flex-basis: 742px;
 }
 
 .sort-links li {
@@ -1594,10 +1600,6 @@ fieldset.search-filter-type-of-hotel {
 .search-result-output-text {
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.sort-links li {
-    padding-top: 34px;
 }
 
 .btn-filter {
