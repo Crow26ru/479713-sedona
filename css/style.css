@@ -1,18 +1,33 @@
 /*  -----  Анимации  -----*/
+@-webkit-keyframes form-move-down {
+    from {-webkit-transform: translate(0, -100%);transform: translate(0, -100%);}
+    to {-webkit-transform: translate(0, 0);transform: translate(0, 0);}
+}
 @keyframes form-move-down {
-    from {transform: translate(0, -100%);}
-    to {transform: translate(0, 0);}
+    from {-webkit-transform: translate(0, -100%);transform: translate(0, -100%);}
+    to {-webkit-transform: translate(0, 0);transform: translate(0, 0);}
+}
+
+@-webkit-keyframes form-move-up {
+    from {-webkit-transform: translate(0, 0);transform: translate(0, 0);}
+    to {-webkit-transform: translate(0, -100%);transform: translate(0, -100%);}
 }
 
 @keyframes form-move-up {
-    from {transform: translate(0, 0);}
-    to {transform: translate(0, -100%);}
+    from {-webkit-transform: translate(0, 0);transform: translate(0, 0);}
+    to {-webkit-transform: translate(0, -100%);transform: translate(0, -100%);}
+}
+
+@-webkit-keyframes input-error {
+    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-15px);transform: translateX(-15px);}
+	   20%, 40%, 60%, 80% {-webkit-transform: translateX(15px);transform: translateX(15px);}
 }
 
 @keyframes input-error {
-    0%, 100% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-15px);}
-	   20%, 40%, 60%, 80% {transform: translateX(15px);}
+    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-15px);transform: translateX(-15px);}
+	   20%, 40%, 60%, 80% {-webkit-transform: translateX(15px);transform: translateX(15px);}
 }
 
 /*  -----  Служебные стили  -----  */
@@ -310,25 +325,36 @@ main.content {
 }
 
 .map .start-status {
-    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
 }
 
 .map .form-open {
-    animation-name: form-move-down;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: form-move-down;
+            animation-name: form-move-down;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .map .form-close {
-    animation-name: form-move-up;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: form-move-up;
+            animation-name: form-move-up;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .map .form-error {
-    animation-name: input-error;
-    animation-duration: 0.6s;
-    animation-timing-function: linear;
+    -webkit-animation-name: input-error;
+            animation-name: input-error;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 }
 
 .map iframe {
@@ -339,7 +365,9 @@ main.content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     -webkit-box-align: center;
@@ -348,14 +376,21 @@ main.content {
 }
 
 .form-search .container-for-peoples-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 55px;
 }
 
 .form-search label {
-    flex-basis: 112px;
+    -ms-flex-preferred-size: 112px;
+        flex-basis: 112px;
     
     font-size: 14px;
     font-weight: bold;
@@ -374,7 +409,11 @@ main.content {
     
     background-color: #f2f2f2;
     
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    
+         -o-transition-duration: 0.5s;
+    
+            transition-duration: 0.5s;
 }
 
 .form-search input:hover {
@@ -451,23 +490,35 @@ main.content {
 }
 
 .form-search .adult-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-basis: 226px;
-    align-items: center;
+    -ms-flex-preferred-size: 226px;
+        flex-basis: 226px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .form-search .children-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-basis: 179px;
-    align-items: center;
+    -ms-flex-preferred-size: 179px;
+        flex-basis: 179px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .adult-container label {
-    flex-basis: 112px;
+    -ms-flex-preferred-size: 112px;
+        flex-basis: 112px;
 }
 
 .children-container label {
-    flex-basis: 65px;
+    -ms-flex-preferred-size: 65px;
+        flex-basis: 65px;
 }
 
 .container-for-peoples-count button {
@@ -509,8 +560,14 @@ main.content {
 .container-for-peoples-count .plus::after {    
     width: 11px;
     
-    transform: translateX(7px) translateY(-4px) rotate(90deg);
-    transform-origin: top left;
+    -webkit-transform: translateX(7px) translateY(-4px) rotate(90deg);
+    
+        -ms-transform: translateX(7px) translateY(-4px) rotate(90deg);
+    
+            transform: translateX(7px) translateY(-4px) rotate(90deg);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
     
 }
 
@@ -586,7 +643,9 @@ main.content {
 }
 
 .hash-tag {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 0;
     margin-bottom: 7px;
     
@@ -955,7 +1014,8 @@ body .container {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-negative: 0;
         flex-shrink: 0;
 }
@@ -992,7 +1052,9 @@ body .container {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0;
     padding: 36px 0;
     padding-bottom: 31px;
@@ -1090,11 +1152,18 @@ body .container {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    flex-grow: 0;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    flex-basis: 742px;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-preferred-size: 742px;
+        flex-basis: 742px;
 }
 
 .sort-links li {
@@ -1341,9 +1410,15 @@ body .container {
 }
 
 .main-footer .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .footer-social ul {
@@ -1359,14 +1434,17 @@ body .container {
             justify-content: space-between;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     margin-left: -1px;
     width: 150px;
 }
 
 .footer-social li {
-    flex-basis: 46px;
+    -ms-flex-preferred-size: 46px;
+        flex-basis: 46px;
     height: 48px;
     
     overflow: hidden;
