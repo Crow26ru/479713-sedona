@@ -229,9 +229,7 @@ main.content {
     background-color: #eeeeee;
 }
 
-.advantages-item-3 h3,
-.advantages-item-4 h3,
-.advantages-item-5 h3 {
+.advantages-item-small h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
@@ -239,9 +237,7 @@ main.content {
     color: #000000;
 }
 
-.advantages-item-3 p,
-.advantages-item-4 p,
-.advantages-item-5 p {
+.advantages-item-small p {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
