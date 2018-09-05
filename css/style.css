@@ -953,6 +953,7 @@ body .container {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    justify-content: space-around;
     -ms-flex-negative: 0;
         flex-shrink: 0;
 }
