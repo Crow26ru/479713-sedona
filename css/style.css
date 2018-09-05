@@ -266,7 +266,7 @@ main.content {
 
 .btn-open-form {
     margin: 0;
-    margin-left: 317px;
+    margin-left: 316px;
     padding: 30px 0;
     width: 568px;
     border: none;
@@ -299,7 +299,7 @@ main.content {
 .map form {
     position: absolute;
     top: 0;
-    left: 317px;
+    left: 316px;
     z-index: 2;
     
     max-width: 458px;
@@ -586,6 +586,10 @@ main.content {
 }
 
 .hash-tag {
+    align-self: center;
+    margin: 0;
+    margin-bottom: 7px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -989,12 +993,16 @@ body .container {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     align-items: flex-start;
+    margin: 0;
+    padding: 36px 0;
 }
 
 .main-footer div,
 .main-footer p {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
+    
+    overflow: hidden;
 }
 
 /*  -----  Сетка страницы каталога  -----  */
@@ -1317,15 +1325,6 @@ body .container {
     height: 593px;
 }
 
-.main-footer {
-    margin: 0;
-    min-height: 120px;
-}
-
-.main-footer p,
-.main-footer div {
-    overflow: hidden;
-}
 .map-effect {
     position: relative;
     z-index: 2;
@@ -1333,12 +1332,6 @@ body .container {
     margin-top: -120px;
     
     background-color: rgba(254, 254, 254, .9);
-}
-
-.main-footer .hash-tag {
-    align-items: flex-start;
-    margin: 0;
-    margin-top: 46px;
 }
 
 .main-footer .footer-social {
@@ -1362,7 +1355,6 @@ body .container {
         align-content: space-between;
     align-items: center;
     margin: 0;
-    margin-top: 36px;
     margin-left: -1px;
     width: 150px;
 }
@@ -1415,20 +1407,19 @@ body .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .author span {
-    margin-top: 14px;
-    margin-left: 2px;
+    margin-top: 10px;
+    margin-left: 103px;
 }
 
 .author a {
     display: block;
     margin: 0;
+    margin-top: 4px;
     margin-left: 8px;
-    margin-top: 26px;
 }
 
 /*ДЕКОРАТИРВНЫЕ ЭЛЕМЕНТЫ СТРАНЦЫ КАТАЛОГА*/
