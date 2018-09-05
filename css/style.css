@@ -225,9 +225,7 @@ main.content {
     color: #000000;
 }
 
-.advantages-item-3,
-.advantages-item-4,
-.advantages-item-5 {
+.advantages-item-small {
     background-color: #eeeeee;
 }
 
@@ -921,8 +919,7 @@ body .container {
         flex-basis: 100%;
 }
 
-.advantages-item-1,
-.advantages-item-2 {
+.advantages .big-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -937,18 +934,18 @@ body .container {
         flex-basis: 100%;
 }
 
-.advantages-item-1-container {
+.advantages-item-1-container,
+.advantages-item-2-container{
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
 }
 
-.advantages-item-1-img-container {
+.advantages-img-container {
     -ms-flex-preferred-size: 800px;
         flex-basis: 800px;
 }
 
-.advantages-item-1-img-container img,
-.advantages-item-2-img-container img {
+.advantages-img-container img {
     display: block;
     width: 800px;
     height: 256px;
@@ -967,29 +964,17 @@ body .container {
         flex-shrink: 0;
 }
 
-.advantages div[class^="advantages-extra"],
-.advantages-item-3,
-.advantages-item-4,
-.advantages-item-5 {
+.advantages .advantages-extra-item,
+.advantages .advantages-item-small {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
 }
 
-.advantages-item-2 {
+.advantages-item-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-}
-
-.advantages-item-2-container {
-    -ms-flex-preferred-size: 400px;
-        flex-basis: 400px;
-}
-
-.advantages-item-2-img-container {
-    -ms-flex-preferred-size: 800px;
-        flex-basis: 800px;
 }
 
 .container-before-search-form a {
