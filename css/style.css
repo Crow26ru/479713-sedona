@@ -881,15 +881,15 @@ body .container {
     width: 128px;
 }
 
-.site-navigation li:first-of-type {
+.site-navigation li:nth-of-type(4n+1) {
     margin-right: 112px;
 }
 
-.site-navigation li:nth-of-type(2) {
+.site-navigation li:nth-of-type(4n+2) {
     margin-right: 315px;
 }
 
-.site-navigation li:last-of-type {
+.site-navigation li:nth-of-type(4n) {
     margin-left: auto;
 }
 
