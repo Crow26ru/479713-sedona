@@ -11,39 +11,39 @@ window.addEventListener("load", function() {
 });
 
 window.addEventListener("keydown", function(e) {
-				if (e.keyCode === 27 && formOrder.classList.contains("form-open")) {
-								e.preventDefault();
-								formOrder.classList.remove("form-open");
+    if (e.keyCode === 27 && formOrder.classList.contains("form-open")) {
+        e.preventDefault();
+        formOrder.classList.remove("form-open");
         formOrder.classList.add("form-close");
-				}
+    }
 });
 
 buttonListeningForm.addEventListener("click", function(e) {
     e.preventDefault();
     formOrder.classList.remove("start-status");
-				
+
     if (!formOrder.classList.contains("form-close") && !formOrder.classList.contains("form-open")) {
         formOrder.classList.add("form-open");
     } else if (formOrder.classList.contains("form-close")) {
         var focusOnInput = formOrder.querySelector("input");
-        
+
         formOrder.classList.remove("form-close");
         formOrder.classList.add("form-open");
         focusOnInput.focus();
     } else {
         formOrder.classList.remove("form-open");
-								formOrder.classList.remove("form-error");
+        formOrder.classList.remove("form-error");
         formOrder.classList.add("form-close");
     }
 });
 
 submitForm.addEventListener("click", function(e) {
     var inputDate = formOrder.querySelector(".input-date");
-	var outputDate = formOrder.querySelector(".output-date");
-	var adultsCount = formOrder.querySelector(".adult-container input");
-	var childrensCount = formOrder.querySelector(".children-container input");
-				
-	if (inputDate.value == "" || outputDate.value == "" || (adultsCount.value == 0 && childrensCount.value == 0)) {
+    var outputDate = formOrder.querySelector(".output-date");
+    var adultsCount = formOrder.querySelector(".adult-container input");
+    var childrensCount = formOrder.querySelector(".children-container input");
+
+    if (inputDate.value == "" || outputDate.value == "" || (adultsCount.value == 0 && childrensCount.value == 0)) {
         e.preventDefault();
         formOrder.classList.add("form-error");
     }
