@@ -643,16 +643,13 @@ main.content {
 }
 
 .hash-tag {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     margin: 0;
-    margin-bottom: 7px;
+    margin-top: 10px;
     
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-align: center;
+    text-indent: 133px;
     color: #000000;
 }
 
@@ -1057,7 +1054,6 @@ body .container {
             align-items: flex-start;
     margin: 0;
     padding: 36px 0;
-    padding-bottom: 31px;
 }
 
 .main-footer div,
@@ -1535,6 +1531,8 @@ body .container {
     margin: 0;
     margin-top: 4px;
     margin-left: 8px;
+    
+    line-height: 0;
 }
 
 /*ДЕКОРАТИРВНЫЕ ЭЛЕМЕНТЫ СТРАНЦЫ КАТАЛОГА*/
