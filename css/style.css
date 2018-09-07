@@ -1800,7 +1800,19 @@ fieldset.search-filter-type-of-hotel {
     background-repeat: no-repeat;
 }
 
+.chkb[type="checkbox"]:disabled + label .custom-checkbox {
+    border-color: rgba(106, 106, 106, 1);
+}
+
+.chkb[type="checkbox"]:checked:disabled + label .custom-checkbox {
+    border: none;
+    
+    background-image: url("../img/checkbox-on-2.svg");
+    background-repeat: no-repeat;
+}
+
 .chkb-last[type="checkbox"] + label > .custom-checkbox,
-.chkb-last[type="checkbox"]:checked + label > .custom-checkbox{
+.chkb-last[type="checkbox"]:checked + label > .custom-checkbox,
+.chkb-last[type="checkbox"]:checked:disabled + label > .custom-checkbox {
     top: -3px;
 }
